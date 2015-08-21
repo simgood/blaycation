@@ -1,0 +1,27 @@
+
+
+$breakpoint-tablet: 900px;
+@media (max-width: $breakpoint-tablet) {
+ 
+	[class*="w-"] {
+		margin:1%;
+	}
+
+ 	.w-2,
+ 	.w-3,
+ 	.w-4,
+ 	.w-5 {
+		width:48%;
+ 	}
+
+ 	.w-7,
+ 	.w-8,
+ 	.w-9,
+ 	.w-10,
+ 	.w-11,
+ 	.w-12,
+ 	.row [class*="w-"]:only-of-type {
+		width:98%;
+ 	}
+
+}

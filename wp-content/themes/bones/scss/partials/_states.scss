@@ -1,0 +1,26 @@
+a:not(.btn-purple, .btn-blue) {
+	@include transition;
+
+	&:hover {
+		color:$purple;
+		text-decoration: underline;
+	}
+}
+
+p a,
+.text a {
+	color:$purple;
+	text-decoration: underline;
+}
+
+.dd-menu_item:hover {
+	background:$purple;
+	cursor:pointer;
+}
+
+.dd-menu_item a:hover {
+	color:#fff;
+	text-decoration: none;
+}
+
+

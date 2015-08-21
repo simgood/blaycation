@@ -1,0 +1,225 @@
+// Main Modules and segments
+hr {
+	width:45%;
+	margin:0 auto;
+	display:block;
+	margin-bottom:$space * 2;
+	border: 1px $blue solid;
+}
+
+section, .section {
+	width:100%;
+	padding:$space 0;
+
+	position:relative;
+}
+
+.panel, %panel {
+	width:100%;
+	height:100%;
+}	
+
+.panel-400 {
+	@extend %panel;
+	min-height:400px;
+}
+
+.panel-300 {
+	@extend %panel;
+	min-height:300px;
+}	
+
+//-------------------------------------
+//			TAB SYSTEM
+//-------------------------------------
+
+.tab {
+	
+}
+
+.tab-toggle {
+	
+}
+
+// Hides the tabs when not ::checked
+.tab-content {
+	display:none;
+	position:absolute;
+	left:0;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+}
+
+
+// Makes the tabs work
+input[type="radio"]:checked {
+
+	& ~ .label {
+		color:$dark;
+	}
+	
+	 & ~ .tab-content {
+		display:block;
+		@include animate(0.4s, appear); 
+ 	}
+}
+
+//------------------------------
+//			SLIDER
+//------------------------------
+
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.ssslide {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.ssslide img {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.sssnext, .sssprev {
+	width: 25px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('images/arr.png') no-repeat;
+}
+
+.sssprev {
+	left: 3%;
+	background-position: 0 50%;
+}
+
+.sssnext {
+	right: 3%;
+	background-position: -26px 50%;
+}
+
+.sssprev:hover, .sssnext:hover {
+	cursor: pointer;
+}
+
+//-------------------------------------
+//			CARDS
+//-------------------------------------
+
+.card {
+	//height:500px;
+	border:1px solid $gray-light;
+}
+
+// .card:nth-child(4n):last-child,
+// .card:nth-child(5n):last-child,
+// .card:nth-child(4n+3):last-child,
+// .card:nth-child(4n):nth-last-child(2),
+// .card:nth-child(4n+3):nth-last-child(2) 
+
+// THIS ONE SEEMS TO WORK:
+// .card:last-child:nth-child(4n),
+// .card:last-child:nth-child(5n),
+// .card:nth-last-child(2):nth-child(3n+1)
+// {
+// 	float:none;
+// 	display:inline-block;
+// }
+
+.card-img {
+	height:200px;
+	overflow:hidden;
+	transition:0.3s;
+
+	img, .card-title {
+		@include transition;
+	}
+
+	&:hover {
+
+		img {
+			@include scale(1.05);
+		}
+		
+		.card-title {
+			opacity:0;
+		}
+
+	}
+}
+
+.card-text .text {
+	max-height:160px;
+	overflow:hidden;
+}
+
+.fade-out {
+	position:absolute;
+	bottom:0;
+	left:0;
+
+	width:100%;
+	height:$space*4;
+	background:linear-gradient(rgba(255,255,255,0),#fff 90%);
+}
+
+// Dropdown Menu
+	
+	.dd {
+		text-align: left;
+		position: relative;
+		
+		.dd-menu {
+			max-height:0;
+
+			overflow:hidden;
+			position: absolute;
+			top:$space + 4;
+			left:$space;
+
+			z-index:4;
+			background:$dark;
+
+			@include transition;
+		}
+
+		.dd-menu_item {
+			display:block;
+			color:#fff;
+			padding:$space/4;		
+		}
+
+	}
+	
+	// Open Menu On Hover
+	.dd:hover {
+		
+		.dd-menu {
+			max-height:500px;
+			padding-top:$space /2;
+		}
+	}
+
+
+
+

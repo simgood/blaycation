@@ -1,0 +1,44 @@
+.bg-tr-dark {
+	@include bg-tr($dark, 0.3);
+}
+
+.bg-tr-purple {
+	@include bg-tr($purple, 0.3);
+}
+
+.bg-purple {
+	background:$purple;
+	color:#fff;
+}
+
+.bg-tr-light {
+	@include bg-tr(#fff, 0.5);
+}
+
+.bg-dark {
+	background:$dark;
+}
+
+.bg-gray-light {
+	background:$gray-light;
+}
+
+.no-margin {
+	margin:0 !important;
+}
+
+.no-margin-t {margin-top:0 !important;}
+.no-margin-b {margin-top:0 !important;}
+.no-margin-l {margin-left:0 !important;}
+.no-margin-r {margin-right:0 !important;}
+
+.fill {
+	width:100%;
+	min-height:100%;
+	height:100%;
+}
+
+.img-fill {
+	height:100%;
+	max-width:none !important;
+}

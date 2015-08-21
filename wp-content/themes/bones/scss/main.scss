@@ -1,0 +1,69 @@
+// This SCSS base is written using the Atomic CSS idea.
+// There are some important global naming conventions used in this project, where a single letter (sometimes two)
+// represent a certain CSS selector. You can find the legend below:
+// b = bottom
+// t = top
+// r = right
+// l = left
+// m = margin
+// p = padding
+// h = horizontal
+// v = vertical
+// d = display
+//   ib = inline-block
+//	  b = block
+//	  i = inline
+// bg = background
+// fl = float
+// lg = large
+// sm = sm
+
+
+// Imports
+
+//--------------------- Variables & Helpers ---------------------\\
+
+// Normalize / Reset
+@import 'partials/normalize';
+
+// Base styles 
+@import 'partials/base';
+
+// Colour variables
+@import 'partials/variables';
+
+// Yep, mixins.
+@import 'partials/mixins';
+
+// Helpful classes
+@import 'partials/helpers';
+
+// Form elements / native elements
+@import 'partials/form';
+
+// Typography - also imports icons
+@import 'partials/type';
+
+// Buttons!
+@import 'partials/buttons';
+
+// Modules
+@import 'partials/modules';
+
+// Motion - animations and such
+@import 'partials/motion';
+
+// Modules
+@import 'partials/navs';
+
+// Animations and Transitions
+@import 'partials/states';
+
+// ----------------------- Structure -----------------------\\
+
+// The Grid
+@import 'partials/grid';
+
+// Main Layout - also imports tablet and mobile layouts
+@import 'partials/layout';
+

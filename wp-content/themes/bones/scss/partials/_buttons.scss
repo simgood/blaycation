@@ -1,0 +1,56 @@
+$border-w: 1px;
+
+button {
+	border:0;
+	cursor:pointer;
+}
+
+// Base button styles
+$btn-font-size: 0.75em;
+
+.btn, %btn {
+	cursor:pointer;
+	text-transform: uppercase;
+	display:inline-block;
+	font-family: $font-heading;
+	font-weight:500;
+	font-size: $btn-font-size;
+	text-align: center;
+	@include transition;
+	border-radius: $space/6;
+
+	margin:$space 0;
+	padding:$space/1.2 $space*1.4;
+}
+
+.btn-blue {
+	@extend %btn;
+	background:$blue;
+	color:#fff;
+
+	&:hover {
+		background:$dark;
+	}
+}
+
+.btn-purple {
+	@extend %btn;
+	background:$purple;
+	color:#fff;
+
+	&:hover {
+		background:rgba($purple, 0.15);
+		color:$purple;
+	}
+}
+
+// Base outline button styles
+[class*="btn-line_"] {
+	border-width:$border-w;
+	border-style: solid;
+	background:transparent;
+	padding:$space - 2px $space - 2px;
+
+}
+
+

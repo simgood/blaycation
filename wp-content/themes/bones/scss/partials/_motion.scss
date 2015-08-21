@@ -1,0 +1,9 @@
+// A straight-up fade-in
+@-webkit-keyframes appear {
+	0% 		{opacity:0;}
+	100%	{opacity:100%;}
+}
+@keyframes appear {
+	0% 		{opacity:0;}
+	100%	{opacity:100%;}
+}

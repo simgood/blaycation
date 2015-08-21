@@ -1,0 +1,32 @@
+
+//Try a simple 6-Column grid system. 
+// Find some good naming.
+
+// Clearfix
+.cf:after, %cf:after {
+  content: "";
+  display: table;
+  clear: both;	
+}
+
+body {
+	max-width:100%;
+	overflow-x:hidden;
+	position:relative;
+}
+
+* {
+	box-sizing:border-box;
+}	
+
+//	Images
+
+img {
+	max-width:100%;
+}
+
+a {
+	text-decoration: none;
+	cursor:pointer;
+	color:inherit;
+}

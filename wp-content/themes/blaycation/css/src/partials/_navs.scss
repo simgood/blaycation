@@ -1,0 +1,15 @@
+.nav {
+
+	ul {
+		@include list-reset;
+		@extend %cf;
+		display:block;
+		text-align: center;
+	}
+	
+	li {
+		display:inline;
+		padding:$space;
+	}
+}
+

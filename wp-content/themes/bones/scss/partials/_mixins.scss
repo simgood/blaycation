@@ -1,0 +1,55 @@
+@mixin transition {
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+
+}
+
+@mixin transition-delay($s) {
+	-webkit-transition-delay: $s;
+	-o-transition-delay: $s;
+	transition-delay: $s;
+}
+
+@mixin scale($n) {
+	-webkit-transform: scale( $n );
+	-ms-transform: scale( $n );
+	-o-transform: scale( $n );
+	transform: scale( $n );
+}
+
+@mixin square($d) {
+	height:$d;
+	width:$d;
+}
+
+@mixin bg-tr($colour, $opacity) {
+	background:rgba($colour, $opacity);
+}
+
+@mixin animate($time, $name) {
+	-webkit-animation: $time $name linear;
+		 -o-animation: $time $name linear;
+		    animation: $time $name linear;	
+}
+
+@mixin truncate {
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:normal;
+}
+
+@mixin list-reset {
+	list-style-type:none;
+	margin:0;
+	padding-left:0;
+}
+
+@mixin shadow {
+	box-shadow:0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+
+@mixin blur($px) {
+	-webkit-filter:blur($px);
+	filter:blur($px);
+}

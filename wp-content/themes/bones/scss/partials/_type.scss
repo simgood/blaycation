@@ -1,0 +1,80 @@
+
+.text-white, .text-white * {
+	color:#fff;
+}
+
+.heading {
+	font-family:$font-heading;
+}
+
+.text {
+	max-width:650px;
+	text-align: left;
+
+	img {
+		height:auto;
+		width:70%;
+		max-height:650px;
+		text-align: center;
+		display:block;
+		margin:$space*2 auto;
+	}
+}
+
+.text-gray {
+	color:#999;
+}
+
+body {
+	font-family: $font-body;
+	color:$dark;
+	font-size: 80%;
+
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+	font-family: $font-heading;
+	text-transform: uppercase;
+}
+
+h1, .h1 {
+	font-size:4em;
+	text-align: center;
+	font-weight:200;
+}
+
+h2, .h2 {
+	font-size:2.6em;
+	text-align: center;
+	font-weight:200;
+}
+
+h3, .h3 {
+	font-size:2em;
+	text-align: center;
+	font-weight: 500;
+}
+
+h4, .h4 {
+	font-size:1.4em;
+	font-weight: 500;
+}
+
+em, .em {
+	font-style:italic;
+	font-weight:400;
+	font-family: $font-body
+}
+
+p {
+	font-weight:400;
+	line-height:1.8;
+	margin:$space/2 0;
+}
+
+
+
