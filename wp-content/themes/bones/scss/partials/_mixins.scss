@@ -1,8 +1,7 @@
-@mixin transition {
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-
+@mixin transition($param) {
+	-webkit-transition: $param;
+	-o-transition: $param;
+	transition: $param;
 }
 
 @mixin transition-delay($s) {

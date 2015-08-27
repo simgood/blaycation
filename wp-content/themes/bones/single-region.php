@@ -7,17 +7,31 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php endwhile; ?>
 				<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-					<?php get_template_part('banner_header'); ?>	
+					<?php get_template_part('module_banner_header'); ?>	
 
-					<section class="row">
-						
-						<h2 class="h2">HIGHLIGHTS</h2>
-							<hr/>
-						<div class="text w70">
+					<?php get_template_part('module_page_content') ?>
+
+					<section class="row center">
+						<h4 class="em w70 h4">Related Content</h4>
+						<hr/>
 							<?php
-								the_content();
-							?>
-						</div>
+
+								$post_object = get_field('related_blog_link');
+
+								if( $post_object ): 
+									// override $post
+									$post = $post_object;
+									setup_postdata( $post ); 
+									?>
+							
+
+								<a href="<?php the_permalink(); ?>">
+									<?php the_field('banner_heading'); ?>
+								</a>
+
+							<?php wp_reset_postdata(); //Reset $post?>
+							<?php endif; ?>
+
 					</section>
 
 					<section>

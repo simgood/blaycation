@@ -7,18 +7,9 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php endwhile; ?>
 				<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-					<?php get_template_part('banner_header'); ?>	
+					<?php get_template_part('module_banner_header'); ?>	
 
-					<section class="row">
-						
-						<h2 class="h2">HIGHLIGHTS</h2>
-							<hr/>
-						<div class="text w70">
-							<?php
-								the_content();
-							?>
-						</div>
-					</section>
+					<?php get_template_part('module_page_content') ?>
 
 					<section>
 						<h2 class="h2">FROM THE ARCHIVE</h2>

@@ -1,0 +1,36 @@
+//-------------------------------------
+//			TAB SYSTEM
+//-------------------------------------
+
+.tab {
+	
+}
+
+.tab-toggle {
+	
+}
+
+// Hides the tabs when not ::checked
+.tab-content {
+	display:none;
+	position:absolute;
+	left:0;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+}
+
+
+// Makes the tabs work
+input[type="radio"]:checked {
+
+	& ~ .label {
+		color:$dark;
+	}
+	
+	 & ~ .tab-content {
+		display:block;
+		@include animate(0.4s, appear); 
+ 	}
+}

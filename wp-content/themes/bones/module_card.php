@@ -10,7 +10,7 @@
 	<div class="card-text p-h p-t-sm">
 		<div class="text relative">
 			<p>
-				<?php the_field('content_body'); ?>
+				<?php the_content(); ?>
 			</p>
 			<div class="fade-out"></div>
 		</div>

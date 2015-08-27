@@ -14,5 +14,11 @@ $transparent-light:rgba(#fff,0.7);
 $font-heading: 'Gotham', 'Verdana', sans-serif;
 $font-body: 'Merriweather', 'Georgia', serif;
 
-// Basic spacing
-$space:16px;
+// Breakpoints
+$breakpoint-tablet:  900px;
+$breakpoint-mobile:  550px;
+
+$space : 16px;
+
+
+

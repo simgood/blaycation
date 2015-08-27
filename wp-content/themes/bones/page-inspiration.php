@@ -7,11 +7,11 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php endwhile; ?>
 				<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-					<?php get_template_part('banner_header'); ?>	
-
-					<section>
-						<h2 class="h2"><?php the_title(); ?></h2>
-							<hr/>										
+					<?php get_template_part('module_banner_header'); ?>	
+							 
+					<?php get_template_part('module_page_content') ?>
+					
+					<section>								
 
 						<?php endif; wp_reset_postdata();?>
 							<?php // Calling Destinations ?>
@@ -26,7 +26,7 @@
 							<div class="w90">
 							<?php while ($Inspiration->have_posts()) : $Inspiration->the_post(); ?>	
 							
-							<?php get_template_part('module_card') ?>
+							<?php get_template_part('module_card_small') ?>
 
 							<?php endwhile; ?>	
 							</div>

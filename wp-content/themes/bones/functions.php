@@ -73,8 +73,8 @@ if ( ! isset( $content_width ) ) {
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+// add_image_size( 'bones-thumb-600', 600, 150, true );
+// add_image_size( 'bones-thumb-300', 300, 100, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -96,14 +96,25 @@ You can change the names and dimensions to whatever
 you like. Enjoy!
 */
 
-add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
+// add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
-function bones_custom_image_sizes( $sizes ) {
-    return array_merge( $sizes, array(
-        'bones-thumb-600' => __('600px by 150px'),
-        'bones-thumb-300' => __('300px by 100px'),
-    ) );
+// function bones_custom_image_sizes( $sizes ) {
+//     return array_merge( $sizes, array(
+//         'bones-thumb-600' => __('600px by 150px'),
+//         'bones-thumb-300' => __('300px by 100px'),
+//     ) );
+// }
+
+// Remove random classes when copy/pasted content
+add_filter('tiny_mce_before_init', 'customize_tinymce');
+
+function customize_tinymce($in) {
+  $in['paste_preprocess'] = "function(pl,o){ o.content = o.content.replace(/p class=\"p[0-9]+\"/g,'p'); o.content = o.content.replace(/span class=\"s[0-9]+\"/g,'span'); o.content = o.content.replace(/ul class=\"ul[0-9]+\"/g,'ul'); o.content = o.content.replace(/li class=\"li[0-9]+\"/g,'li'); }";
+  return $in;
 }
+
+//Remove the stupid auto P !
+//remove_filter('the_content', 'wpautop');
 
 /*
 The function above adds the ability to use the dropdown menu to select

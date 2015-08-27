@@ -1,26 +1,20 @@
-a:not(.btn-purple, .btn-blue) {
-	@include transition;
-
-	&:hover {
-		color:$purple;
-		text-decoration: underline;
+.nav-item {
+	a {
+		@include transition(0.4s);
+		border-bottom:2px solid transparent;
+		padding-bottom:$space / 4;
 	}
-}
 
-p a,
-.text a {
-	color:$purple;
-	text-decoration: underline;
+	a:hover {
+		color:$purple;
+		border-bottom-color: $purple;
+	}
 }
 
 .dd-menu_item:hover {
 	background:$purple;
-	cursor:pointer;
-}
-
-.dd-menu_item a:hover {
 	color:#fff;
-	text-decoration: none;
+	cursor:pointer;
 }
 
 

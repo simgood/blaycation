@@ -49,6 +49,10 @@
 
 // Modules
 @import 'partials/modules';
+@import 'partials/module-tabs';
+@import 'partials/module-slider';
+@import 'partials/module-cards';
+@import 'partials/module-dropdown';
 
 // Motion - animations and such
 @import 'partials/motion';
@@ -64,6 +68,12 @@
 // The Grid
 @import 'partials/grid';
 
-// Main Layout - also imports tablet and mobile layouts
+// Main Layout
 @import 'partials/layout';
+
+// Tablet Layout
+@import 'partials/layout-tablet';
+
+// Mobile Layout
+@import 'partials/layout-mobile';
 

@@ -7,8 +7,8 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php endwhile; ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-					<?php get_template_part('banner_header'); ?>	
+					
+					<?php get_template_part('module_banner_header-slider'); ?>	
 
 					<section>
 						<?php
@@ -34,7 +34,7 @@
 								<div class="card w25 m-v-sm">
 									<div class="card-img relative">
 										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="anchor">
-											<img class="img-fill" src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
+											<img src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
 											<h4 class="h4 card-title no-margin center p-t-md absolute pos-tl text-white fill bg-tr-purple">
 												<?php the_title(); ?>
 											</h4>
@@ -58,51 +58,42 @@
 							<div class="tabset relative cf panel-300 w80">
 								
 								<div class="tab w25 center">
-									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab1" checked/>
-															
-									<label class="label" for="tab1"><?php the_field("tab_one_title"); ?></label>
+									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab1" checked/>						
+									<label class="label" for="tab1" class="center"><?php the_field("tab_one_title"); ?></label>
 													
 									<div class="tab-content w100 p-sm">
-										<div class="w90">
-										<p>
+										<div class="w90 left text_sm">
 											<?php the_field("tab_one_content"); ?>
-										</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab2"/>
-									<label class="label" for="tab2" class="text-center"><?php the_field('tab_two_title'); ?></label>
+									<label class="label" for="tab2" class="center"><?php the_field('tab_two_title'); ?></label>
 									<div class="tab-content w100 p-sm">
-										<div class="w90">
-										<p>
+										<div class="w90 left text_sm">
 											<?php the_field('tab_two_content'); ?>
-										</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab3"/>
-									<label class="label" for="tab3" class="text-center"><?php the_field('tab_three_title'); ?></label>
+									<label class="label" for="tab3" class="center"><?php the_field('tab_three_title'); ?></label>
 									<div class="tab-content w100 p-sm">
-										<div class="w90">
-										<p>
+										<div class="w90 left text_sm">
 											<?php the_field('tab_three_content'); ?>
-										</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab4"/>
-									<label class="label" for="tab4" class="text-center"><?php the_field('tab_four_title'); ?></label>
+									<label class="label" for="tab4" class="center"><?php the_field('tab_four_title'); ?></label>
 									<div class="tab-content w100 p-sm">
-										<div class="w90">
-										<p>
+										<div class="w90 left text_sm">
 											<?php the_field('tab_four_content'); ?>
-										</p>
 										</div>
 									</div>
 								</div>
@@ -169,7 +160,7 @@
 								<div class="card w25 m-v-sm">
 									<div class="card-img relative">
 										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="anchor">
-											<img class="img-fill" src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
+											<img src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
 											<h4 class="h4 card-title no-margin center p-t-md absolute pos-tl text-white fill bg-tr-purple">
 												<?php the_title(); ?>
 											</h4>
