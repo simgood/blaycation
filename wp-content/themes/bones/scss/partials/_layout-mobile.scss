@@ -1,9 +1,65 @@
+// Specific Device Displays
+// -- Mobile Only
+.d-mob {
+	display:none;
+}
+
+
 
 @media (max-width: $breakpoint-mobile) {
 
 	// //Fix the proportions of img
-	* {
-		font-size:97%;
+	body {
+		font-size:76%;
+	}
+
+	//Defines main content areas
+	.text.w70 {
+		width:94%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	// Client Section
+	.panel-300 .w60 {
+		width:80%;
+	}
+
+	.tabset.w80 {
+		width:98%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.tabset.panel-300 {
+		min-height:500px;
+	}
+
+	.tab-content {
+		top:20%;
+	}
+
+	.tab.w25 {
+		width:48%;
+		padding-top:$space / 2;
+		padding-bottom:$space / 2;
+	}
+
+
+	// Contextual Cards at the bottom of each page
+	.card.w30 {
+		width:48%;
+		float:none;
+		display:inline-block;
+	}
+
+	.row .w90 {
+		width:100%;
+	}
+
+	// Hides / Shows according to device size
+	.d-mob {
+		display:block;
 	}
 
 	.card-img {
@@ -17,6 +73,85 @@
 
 	.p-t-md {
 		padding-top:50px;
+	}
+
+	.mob-fixed-header {
+		width:100%;
+		background:#fff;
+		position: fixed;
+		top:0;
+		left:0;
+		z-index:10;
+
+		content: "";
+  		display: table;
+  		clear: both;
+
+  		&:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+  		}	
+	}
+
+	.nav {
+		width:96%;
+		height:100%;
+		border-right:1px solid $purple;
+
+		margin-left: auto;
+		margin-right: auto;
+		background:#fff;
+		z-index:10;
+
+		position: fixed;
+		top:0;
+		//right:20%;
+		left:-100%;
+		overflow:hidden;
+		transition:0.4s;
+
+		padding-top:18px;
+	}
+
+	//Mobile Nav Menu OPEN state
+	.mobile-nav_open {
+		left:0;
+	}
+
+	.mobile-nav_toggle {
+		cursor:pointer;
+		font-family: 'Gotham';
+	}
+
+	.nav-container {
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		max-height:100%;
+		overflow:scroll;
+	}
+
+	.nav-item {
+		display:block;
+		text-align: left;
+		padding:$space;
+	}
+
+	// Show dropdown menu in mobile navigation menu
+	.nav .dd .dd-menu {
+		position: static;
+		max-height:100%;
+	}
+
+	.nav .dd-menu_item {
+		padding-left:$space;
+	}
+
+
+	.gform_wrapper .gfield,
+	.gform_wrapper .gform_footer {
+		width:100%;
 	}
 
 }

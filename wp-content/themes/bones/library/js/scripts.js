@@ -38,5 +38,9 @@ $('.slider').sss({
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
+
+	$(".mobile-nav_toggle").click(function(){
+		$(".nav").toggleClass("mobile-nav_open");
+	});
 	
 }); /* end of as page load scripts */

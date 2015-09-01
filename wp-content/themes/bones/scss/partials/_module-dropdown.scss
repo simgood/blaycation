@@ -1,7 +1,6 @@
 // Dropdown Menu
 	
 	.dd {
-		text-align: left;
 		position: relative;
 		
 		.dd-menu {
@@ -16,6 +15,10 @@
 			background:#fff;
 
 			@include transition(0.4s);
+
+			a {
+				text-align: left;
+			}
 		}
 
 		.dd-menu_item {

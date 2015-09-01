@@ -1,19 +1,63 @@
-.form-group {
+.gform_wrapper {
 
-	> * {
-		display:block;
-		margin:$space*2 auto;
+	ul {
+		list-style-type:none;
+		padding-left:0;
 	}
 
-}	
+	label {
+		font-family: $font-heading;
+	}
 
-.label {
-	font-family: $font-heading;
-	color:#999;
+	input, textarea {
+		border:1px solid #ddd;
+
+		&:focus, &:active {
+			outline:2px solid $purple;
+		}
+	}
+
+	.gfield, .gform_footer {
+		padding:$space;
+		width:80%;
+		@include margin-h(auto);
+	}
+
+	.gform_footer {
+		text-align: center;
+
+		input[type='submit'] {
+			width:50%;
+			@extend .h4;
+		}
+	}
+
+	input[type='radio'] + label {
+		padding-left:10px;
+	}
+
+	.validation_error,
+	.validation_message {
+		color:red;
+		font-size: 0.6em;
+		text-align: center;
+		font-family: $font-heading;
+	}
+
+	.ginput_container input[type='text'],
+	.ginput_container textarea {
+		width:100%;
+		padding:$space / 1.5;
+		@include margin-h(auto);
+	}
+
 }
 
+
+
+
 // Input Group Stack
-	.input-group-stack {
+	.input-group_stack {
 		
 		input {
 			width:50%;

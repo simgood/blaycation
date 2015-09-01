@@ -1,14 +1,26 @@
+// Specific Device Displays
+// -- desktop Only
+.d-dt {
+	display:none;
+}
+
+@media screen and (min-width:1000px) {
+	.d-dt {
+		display:block;
+	}
+}
+
 // Layers (Z-index)
 .z-b {z-index:0;}
 .z-m {z-index:3;}
 .z-t {z-index:6;}
-
 
 // Positioning
 .absolute {position: absolute;}
 .relative {position: relative;}
 .fixed	  {position:fixed;}
 .static	  {position: static;}
+
 .pos-t  {top:0;}
 .pos-b  {bottom:0;}
 .pos-r  {right:0;}
@@ -48,6 +60,18 @@
 .p-b-md  	{padding-bottom:$space * 4;}
 .p-b-lg 	{padding-bottom:$space * 6;}
 .p-b-xl  	{padding-bottom:$space * 8;}
+
+.p-l-sm  	{padding-left:$space;}
+.p-l 	 	{padding-left:$space * 2;}
+.p-l-md  	{padding-left:$space * 4;}
+.p-l-lg 	{padding-left:$space * 6;}
+.p-l-xl  	{padding-left:$space * 8;}
+
+.p-r-sm  	{padding-right:$space;}
+.p-r 	 	{padding-right:$space * 2;}
+.p-r-md  	{padding-right:$space * 4;}
+.p-r-lg 	{padding-right:$space * 6;}
+.p-r-xl  	{padding-right:$space * 8;}
 
 .p-h-sm 	{padding-left:$space / 2;padding-right:$space / 2;}
 .p-h 		{padding-left:$space;padding-right:$space;}

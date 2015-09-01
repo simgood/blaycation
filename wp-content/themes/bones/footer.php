@@ -3,7 +3,7 @@
 					<div class="text-dark em h3">
 						Let us create your ideal travel experience.
 					</div>
-					<a href="" class="btn-blue m">BUILD WITH BLAYCATION</a>
+					<a href="<?php echo home_url(); ?>/build-a-blaycation" class="btn-blue m">BUILD WITH BLAYCATION</a>
 				</div>
 			</div>
 

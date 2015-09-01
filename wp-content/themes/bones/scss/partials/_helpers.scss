@@ -1,3 +1,4 @@
+
 .bg-tr-dark {
 	@include bg-tr($dark, 0.3);
 }
@@ -6,13 +7,13 @@
 	@include bg-tr($purple, 0.3);
 }
 
+.bg-tr-light {
+	@include bg-tr(#fff, 0.5);
+}
+
 .bg-purple {
 	background:$purple;
 	color:#fff;
-}
-
-.bg-tr-light {
-	@include bg-tr(#fff, 0.5);
 }
 
 .bg-dark {

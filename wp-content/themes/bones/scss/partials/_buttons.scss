@@ -1,6 +1,7 @@
 $border-w: 1px;
 
-button {
+button,
+.button {
 	border:0;
 	cursor:pointer;
 }
@@ -8,7 +9,8 @@ button {
 // Base button styles
 $btn-font-size: 0.75em;
 
-.btn, %btn {
+.btn,
+%btn {
 	cursor:pointer;
 	text-transform: uppercase;
 	display:inline-block;
@@ -23,7 +25,8 @@ $btn-font-size: 0.75em;
 	padding:$space/1.2 $space*1.4;
 }
 
-.btn-blue {
+.btn-blue,
+.button {
 	@extend %btn;
 	background:$blue;
 	color:#fff;

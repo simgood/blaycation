@@ -7,7 +7,7 @@
 			</h4>
 		</a>
 	</div>
-	<div class="card-text p-h p-t-sm">
+	<div class="card-text p-h p-t-sm d-tab">
 		<div class="text relative">
 			<p>
 				<?php the_content(); ?>
