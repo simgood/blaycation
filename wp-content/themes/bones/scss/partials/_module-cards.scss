@@ -18,6 +18,15 @@
 
 $card-img-height:200px;
 
+.img-wide {
+	
+	img {
+		min-height:200px;
+		height:auto !important;
+		min-width:100%;
+	}
+}
+
 .card-img {
 	height:$card-img-height;
 	overflow:hidden;
@@ -46,6 +55,7 @@ $card-img-height:200px;
 
 	}
 }
+
 
 .card-text .text {
 	max-height:160px;

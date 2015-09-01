@@ -10,7 +10,8 @@
 					<?php get_template_part('module_banner_header'); ?>	
 
 					<?php get_template_part('module_page_content') ?>
-
+					
+					<?php if (get_field('related_blog_link') && get_field('related_blog_link') != "") { ?>
 					<section class="row center">
 						<h4 class="em w70 h4">Related Content</h4>
 						<hr/>
@@ -33,6 +34,7 @@
 							<?php endif; ?>
 
 					</section>
+					<?php } ?>
 
 					<section>
 						<h2 class="h2">POPULAR DESTINATIONS</h2>

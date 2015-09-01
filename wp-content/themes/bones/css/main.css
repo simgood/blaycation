@@ -745,6 +745,11 @@ ul.slider {
   float: none;
   display: inline-block; }
 
+.img-wide img {
+  min-height: 200px;
+  height: auto !important;
+  min-width: 100%; }
+
 .card-img {
   height: 200px;
   overflow: hidden;
