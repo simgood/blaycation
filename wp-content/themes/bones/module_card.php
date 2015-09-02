@@ -15,9 +15,9 @@
 	</div>
 	<div class="card-text p-h p-t-sm d-tab">
 		<div class="text relative">
-			<p>
+			<div class="text_sm">
 				<?php the_content(); ?>
-			</p>
+			</div>
 			<div class="fade-out"></div>
 		</div>
 		

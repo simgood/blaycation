@@ -10,11 +10,8 @@
 					<?php get_template_part('module_banner_header'); ?>	
 
 					<?php get_template_part('module_page_content') ?>
-					
-					<?php if (get_field('related_blog_link') && get_field('related_blog_link') != "") { ?>
-					<section class="row center">
-						<h4 class="em w70 h4">Related Content</h4>
-						<hr/>
+				
+
 							<?php
 
 								$post_object = get_field('related_blog_link');
@@ -22,19 +19,27 @@
 								if( $post_object ): 
 									// override $post
 									$post = $post_object;
+
+								$image = get_field('banner_image'); 
+								$size = 'thumbnail';
+								$imgsrc = wp_get_attachment_image_src( $image, $size );
+
 									setup_postdata( $post ); 
 									?>
-							
+						<section class="row center">
+									<h4 class="em w70 h4">Related Content</h4>
+								<hr/>
 
 								<a href="<?php the_permalink(); ?>">
+									<div class="w25">
+										<img src="<?php echo $imgsrc[0] ?>">
+									</div>
+									
 									<?php the_field('banner_heading'); ?>
 								</a>
-
+						</section>
 							<?php wp_reset_postdata(); //Reset $post?>
 							<?php endif; ?>
-
-					</section>
-					<?php } ?>
 
 					<section>
 						<h2 class="h2">POPULAR DESTINATIONS</h2>

@@ -32,7 +32,7 @@
 							<?php while ($Destination->have_posts()) : $Destination->the_post(); ?>	
 							
 								<div class="card w25 m-v-sm">
-									<div class="card-img relative">
+									<div class="card-img relative img-wide">
 										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="anchor">
 											<?php 
 												$image = get_field('banner_image'); 

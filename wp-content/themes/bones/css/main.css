@@ -432,38 +432,41 @@ a {
   height: 100%;
   width: 100%; }
 
-.gform_wrapper ul {
-  list-style-type: none;
-  padding-left: 0; }
-.gform_wrapper label {
-  font-family: "Gotham", "Verdana", sans-serif; }
-.gform_wrapper input, .gform_wrapper textarea {
-  border: 1px solid #ddd; }
-  .gform_wrapper input:focus, .gform_wrapper input:active, .gform_wrapper textarea:focus, .gform_wrapper textarea:active {
-    outline: 2px solid #596387; }
-.gform_wrapper .gfield, .gform_wrapper .gform_footer {
-  padding: 16px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-.gform_wrapper .gform_footer {
-  text-align: center; }
-  .gform_wrapper .gform_footer input[type='submit'] {
-    width: 50%; }
-.gform_wrapper input[type='radio'] + label {
-  padding-left: 10px; }
-.gform_wrapper .validation_error,
-.gform_wrapper .validation_message {
-  color: red;
-  font-size: 0.6em;
-  text-align: center;
-  font-family: "Gotham", "Verdana", sans-serif; }
-.gform_wrapper .ginput_container input[type='text'],
-.gform_wrapper .ginput_container textarea {
-  width: 100%;
-  padding: 10.66667px;
-  margin-left: auto;
-  margin-right: auto; }
+.gform_wrapper {
+  box-shadow: 2px 2px 4px 0px #ccc;
+  border: 1px solid #ccc; }
+  .gform_wrapper ul {
+    list-style-type: none;
+    padding-left: 0; }
+  .gform_wrapper label {
+    font-family: "Gotham", "Verdana", sans-serif; }
+  .gform_wrapper input, .gform_wrapper textarea {
+    border: 1px solid #ddd; }
+    .gform_wrapper input:focus, .gform_wrapper input:active, .gform_wrapper textarea:focus, .gform_wrapper textarea:active {
+      outline: 2px solid #596387; }
+  .gform_wrapper .gfield, .gform_wrapper .gform_footer {
+    padding: 16px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+  .gform_wrapper .gform_footer {
+    text-align: center; }
+    .gform_wrapper .gform_footer input[type='submit'] {
+      width: 50%; }
+  .gform_wrapper input[type='radio'] + label {
+    padding-left: 10px; }
+  .gform_wrapper .validation_error,
+  .gform_wrapper .validation_message {
+    color: red;
+    font-size: 0.6em;
+    text-align: center;
+    font-family: "Gotham", "Verdana", sans-serif; }
+  .gform_wrapper .ginput_container input[type='text'],
+  .gform_wrapper .ginput_container textarea {
+    width: 100%;
+    padding: 10.66667px;
+    margin-left: auto;
+    margin-right: auto; }
 
 .input-group_stack input {
   width: 50%;
@@ -587,8 +590,7 @@ h4, .h4, .gform_wrapper .gform_footer input[type='submit'], .text b, .text stron
     font-size: 1em; } }
 .text img {
   height: auto;
-  width: 70%;
-  max-height: 650px;
+  width: 100%;
   text-align: center;
   display: block;
   margin: 32px auto; }
@@ -747,8 +749,7 @@ ul.slider {
 
 .img-wide img {
   min-height: 200px;
-  height: auto !important;
-  min-width: 100%; }
+  height: auto !important; }
 
 .card-img {
   height: 200px;
@@ -792,7 +793,8 @@ ul.slider {
     overflow: hidden;
     position: absolute;
     top: 20px;
-    left: 16px;
+    left: -16px;
+    width: 160px;
     z-index: 4;
     background: #fff;
     -webkit-transition: 0.4s;
@@ -803,7 +805,7 @@ ul.slider {
   .dd .dd-menu_item {
     display: block;
     color: #212121;
-    padding: 4px; }
+    padding: 4px 16px; }
 
 .dd:hover .dd-menu {
   max-height: 500px;

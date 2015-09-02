@@ -3,7 +3,6 @@
 
 ## Back End
 
-- Link img to "Related Content" section on Blog Pages
 - Build a Blaycation page needs a Design MAKEOVER
 
 
