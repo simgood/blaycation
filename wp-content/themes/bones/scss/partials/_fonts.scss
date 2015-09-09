@@ -23,6 +23,28 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-angle-up:before {
+	content: "\e20a";
+}
+.icon-angle-down:before {
+	content: "\e20b";
+}
+
+.icon-googleplus:before {
+	content: "\e602";
+}
+.icon-facebook:before {
+	content: "\e603";
+}
+.icon-twitter:before {
+	content: "\e604";
+}
+.icon-youtube:before {
+	content: "\e605";
+}
+.icon-linkedin:before {
+	content: "\e606";
+}
 .icon-logo-mark:before {
 	content: "\e600";
 }

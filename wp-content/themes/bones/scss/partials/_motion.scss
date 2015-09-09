@@ -3,6 +3,10 @@
 	0% 		{opacity:0;}
 	100%	{opacity:100%;}
 }
+@-moz-keyframes appear {
+	0% 		{opacity:0;}
+	100%	{opacity:100%;}
+}
 @keyframes appear {
 	0% 		{opacity:0;}
 	100%	{opacity:100%;}
@@ -10,4 +14,17 @@
 
 .fade-in {
 	@include transition(1.5s);
+}
+
+@keyframes appearance {
+	0%		{position: relative;left:-100%;}
+	100%	{left:0;position: relative;}
+}
+@-webkit-keyframes appearance {
+	0%		{position: relative;left:-100%;}
+	100%	{left:0;position: relative;}
+}
+@-moz-keyframes appearance {
+	0%		{position: relative;left:-100%;}
+	100%	{left:0;position: relative;}
 }

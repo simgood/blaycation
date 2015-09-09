@@ -2,63 +2,44 @@
 //			SLIDER
 //------------------------------
 
-.sss {
-	height: 0;
-	margin: 0; 
-	padding: 0;
+.slider {
 	position: relative;
-	display: block;
-	overflow: hidden;
-}
+	overflow: auto;
 
-.ssslide {
-	width: 100%;
-	margin: 0;
-	padding: 0;
+	ul {
+		padding-left:0;
+		margin:0;
+
+		li {
+			float:left;
+			list-style:none;
+		}
+	}
+
+}   
+
+
+.dots {
 	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	overflow: hidden;
-}
+	bottom:0;
+	right:0;
+	@extend %cf;
 
-.ssslide img {
-	max-width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	display: block;
-}
+	li.dot {
+		float:left;
+		@include square(5px);
+		@include transition(0.3s);
+		
+		cursor:pointer;
+		background:transparent;
+		padding:5px;
+		margin:10px;
+		
+		border:1px solid #fff;
+		border-radius: 50%;
 
-.sssnext, .sssprev {
-	width: 25px;
-	height: 100%;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	//background: url('images/arr.png') no-repeat;
-}
-
-.sssprev {
-	left: 3%;
-	background-position: 0 50%;
-}
-
-.sssnext {
-	right: 3%;
-	background-position: -26px 50%;
-}
-
-.sssprev:hover, .sssnext:hover {
-	cursor: pointer;
-}
-
-// add transition effect to the slide elements in the slider
-.slider > .sss > * {
-	@include transition(0.2s);
-}
-
-ul.slider {
-	padding-left:0;
-}
+		&.active {
+			background:#fff;
+		}
+	}
+}    

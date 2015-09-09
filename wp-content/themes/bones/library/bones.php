@@ -138,6 +138,8 @@ function bones_scripts_and_styles() {
 		  wp_enqueue_script( 'comment-reply' );
     }
 
+    	// loading unslider.min.js
+    	wp_register_script( 'unslider', get_stylesheet_directory_uri() . '/library/js/libs/unslider.min.js', array( 'jquery' ), '', true );
 		//adding scripts file in the footer
 		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 	
@@ -154,6 +156,7 @@ function bones_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'unslider' );
 		wp_enqueue_script( 'bones-js' );
 
 	}

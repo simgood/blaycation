@@ -1,20 +1,28 @@
-<header class="header" role="banner" itemscope itemtype="">
+<header class="header fixed vw pos-l pos-t" role="banner" itemscope itemtype="">
 
 	<div class="mob-fixed-header">
-		<div class="logo fl-l p-l-sm" itemscope="logo"><a href="<?php echo home_url(); ?>"><div class="icon icon-logo-mark"></div></a></div>
+		<div class="logo fl-l p-l-sm p-v-sm text-purple">
+			<a href="<?php echo home_url(); ?>">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.gif" width="80" alt="Blaycation Logo" itemscope="logo"> -->
+				<div class="icon icon-logo h2 fl-l"></div>
+				<h2 class="h2 fl-l no-margin p-l-sm state-appear">BLAYCATION</h2>
+			</a>
+		</div>
 		<div class="fl-r p-sm d-mob mobile-nav_toggle">MENU <span class="icon icon-menu"></span></div>
 	</div>	
 
-	<nav class="nav cf p-t center vw heading" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+	<nav class="nav cf p-t-sm center vw heading" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		<div class="d-mob absolute pos-t pos-r p-sm h4 mobile-nav_toggle">
 			<div class="icon icon-close"></div>
 		</div>
-		<div class="nav-container">
-		<div class="nav-item d-ib p-h dd">
+		<div class="nav-container cf d-ib h100">
+		<div class="nav-item d-b fl-l p-h dd">
 			<div class="d-mob h2 left p-t-sm p-l-sm p-b">
 				<span class="icon icon-logo"></span>
 			</div>
-			<a class="d-b" href="<?php echo home_url(); ?>/destinations">DESTINATIONS</a>
+			<a class="d-b" href="<?php echo home_url(); ?>/destinations">DESTINATIONS 
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
 				
 				<div class="dd-menu">
 						<a href="<?php echo home_url(); ?>/destinations">
@@ -66,20 +74,40 @@
 						</a>
 				</div>
 		</div>
-		<div class="nav-item d-ib p-h">
+		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/inspirations">INSPIRATIONS</a>
 		</div>
-		<div class="nav-item d-ib p-h">
+		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/blaycation-insider">BLAYCATION INSIDER</a>
 		</div>
-		<div class="nav-item d-ib p-h">
+		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US</a>
 		</div>
-		<div class="nav-item d-ib p-h">
-			<a class="d-b" href="<?php echo home_url(); ?>/build-a-blaycation">BUILD A BLAYCATION</a>
+		<div class="nav-item d-b fl-l p-h dd">
+			<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">BOOK NOW 
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
+			<div class="dd-menu">
+				<a>
+					<div class="dd-menu_item modal-window-toggle">
+						Request a Callback
+					</div>
+				</a>
+				<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">
+					<div class="dd-menu_item">
+						Build a Blaycation
+					</div>
+				</a>
+				<a href="tel:1-902-441-5664">
+					<div class="dd-menu_item">
+						Call 1-902-441-5664
+					</div>
+				</a>
+			</div>
 		</div>
 
 		</div> <!-- Nav Container -->
+
 	</nav>
 
 

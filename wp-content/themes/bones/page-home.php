@@ -112,8 +112,8 @@
 
 					<section class="panel-300 bg-purple">
 						<h2 class="h2">WHAT OUR CLIENTS SAY</h2>
-							<div class="w60">
-								<ul class="slider cf">
+							<div class="w60 slider">
+								<ul class="cf">
 									<li>
 										<p class="em">
 											<?php the_field('client_quote_one') ?>

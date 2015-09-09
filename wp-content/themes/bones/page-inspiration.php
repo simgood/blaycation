@@ -18,7 +18,7 @@
 							<?php $Inspiration = new WP_Query(array( 
 								'post_type' => 'inspiration',
 								'posts_per_page' => '-1',
-								'orderby'=> 'title',
+								'orderby'=> 'rand',
 								'order' => 'ASC'
 							)); ?>
 							

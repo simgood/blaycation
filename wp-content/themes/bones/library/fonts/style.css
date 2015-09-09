@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'blaycation';
-	src:url('../library/fonts/blaycation.eot?-he0qbf');
-	src:url('../library/fonts/blaycation.eot?#iefix-he0qbf') format('embedded-opentype'),
-		url('../library/fonts/blaycation.ttf?-he0qbf') format('truetype'),
-		url('../library/fonts/blaycation.woff?-he0qbf') format('woff'),
-		url('../library/fonts/blaycation.svg?-he0qbf#blaycation') format('svg');
+	src:url('fonts/blaycation.eot?yywyv8');
+	src:url('fonts/blaycation.eot?#iefixyywyv8') format('embedded-opentype'),
+		url('fonts/blaycation.ttf?yywyv8') format('truetype'),
+		url('fonts/blaycation.woff?yywyv8') format('woff'),
+		url('fonts/blaycation.svg?yywyv8#blaycation') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,15 +23,36 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo-mark:before {
-	content: "\e600";
+.icon-angle-up:before {
+	content: "\e20a";
 }
-.icon-logo:before {
-	content: "\e601";
+.icon-angle-down:before {
+	content: "\e20b";
 }
 .icon-close:before {
 	content: "\e117";
 }
 .icon-menu:before {
 	content: "\e120";
+}
+.icon-google-plus:before {
+	content: "\e602";
+}
+.icon-facebook:before {
+	content: "\e603";
+}
+.icon-twitter:before {
+	content: "\e604";
+}
+.icon-youtube:before {
+	content: "\e605";
+}
+.icon-linkedin2:before {
+	content: "\e606";
+}
+.icon-logo-mark:before {
+	content: "\e600";
+}
+.icon-logo:before {
+	content: "\e601";
 }

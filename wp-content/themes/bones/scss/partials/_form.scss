@@ -1,24 +1,39 @@
 .gform_wrapper {
-	box-shadow:2px 2px 4px 0px #ccc;
+	@include shadow;
 	border:1px solid #ccc;
+	overflow:auto;
 
 	ul {
 		list-style-type:none;
 		padding-left:0;
 	}
 
-	label {
-		font-family: $font-heading;
+	.gform_title {
+		text-align: center;
 	}
 
-	input, textarea {
-		border:1px solid #ddd;
+
+	// Labels
+	label {
+		font-family: $font-heading;
+		font-size:0.8em;
+		text-transform: uppercase;
+
+		color:#999;
+	}
+
+	// Normal Text Fields
+	input[type='text'], textarea {
+		border:1px solid $blue;
+		@include transition(box-shadow 0.2s);
 
 		&:focus, &:active {
-			outline:2px solid $purple;
+			outline:3px solid $blue;
+			@include shadow;
 		}
 	}
 
+	// the send button section
 	.gfield, .gform_footer {
 		padding:$space;
 		width:80%;
@@ -28,14 +43,48 @@
 	.gform_footer {
 		text-align: center;
 
+
+		// the SEND button
 		input[type='submit'] {
-			width:50%;
-			@extend .h4;
+			width:100%;
+			background:$dark;
+			@include transition(0.3s);
+
+			&:hover {
+				background:$blue;
+			}
 		}
 	}
 
-	input[type='radio'] + label {
-		padding-left:10px;
+
+	input[type='radio'] {
+
+		+ label {
+			padding-left:10px;
+			color:$dark;
+			text-transform: initial;
+			font-size:1em;
+			position: relative;
+
+			&::before {
+				content:" ";
+				position: absolute;
+	        	top: -2px;
+	        	left: -16px;
+	        	@include square(16px);
+	        	border-radius: 50%;
+	        	@include transition(0.3s);
+	        	background:#fff;
+	        	border:1px solid $blue;
+			}
+		}
+
+		&:checked + label::before {
+			background:$blue;
+			border:3px solid #fff;
+			@include shadow;
+		}
+
 	}
 
 	.validation_error,

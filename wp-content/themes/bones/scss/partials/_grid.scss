@@ -7,11 +7,13 @@
 	margin-right:0.5%;
 	margin-left:0.5%;
 
-	&:only-of-type {
+	&:only-of-type,
+	&.middle {
 		float:none;
 		margin-right:auto;
 		margin-left:auto;
 	}
+
 }
 
 // @for $i from 2 through $total-columns {
@@ -117,6 +119,10 @@ $w10:10%;
 .vh {
 	height:100%;
 	height:100vh;
+}
+
+.h100 {
+	height:100%;
 }
 
 // 100% Vertical Height

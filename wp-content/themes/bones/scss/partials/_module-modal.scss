@@ -1,0 +1,21 @@
+.modal-window {
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:-100%;
+	z-index:11;
+
+	overflow:auto;
+
+	background:rgba($purple, 0.8);
+
+	@include transition(0.4s);
+}
+
+.modal-window-toggle {
+	cursor:pointer;
+}
+
+.modal-window_active {
+	top:0 !important;
+}

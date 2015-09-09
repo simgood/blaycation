@@ -44,6 +44,7 @@ $btn-font-size: 0.75em;
 	&:hover {
 		background:rgba($purple, 0.15);
 		color:$purple;
+		text-decoration: none;
 	}
 }
 
@@ -56,4 +57,41 @@ $btn-font-size: 0.75em;
 
 }
 
+// Social Buttons
+
+%btn-social {
+	@include square(1.8em);
+	@include transition(0.2s);
+	color:#fff;
+	text-align: center;
+	font-size: 1em;
+
+	.icon {
+		line-height: 1.5em;
+	}
+
+	&:hover {
+		@include shadow;
+	}
+}
+
+.btn-social_twitter {
+	@extend %btn-social;
+	background:$color-twitter;
+}
+
+.btn-social_facebook {
+	@extend %btn-social;
+	background:$color-facebook;
+}
+
+.btn-social_gplus {
+	@extend %btn-social;
+	background:$color-gplus;
+}
+
+.btn-social_linkedin {
+	@extend %btn-social;
+	background:$color-linkedin;
+}
 
