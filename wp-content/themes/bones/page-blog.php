@@ -12,7 +12,7 @@
 					<?php get_template_part('module_page_content') ?>
 
 					<section>
-						<h2 class="h2">FROM THE ARCHIVE</h2>
+						<h2 class="h2">READ ON...</h2>
 							<hr/>										
 
 						<?php endif; wp_reset_postdata();?>
@@ -23,7 +23,7 @@
 							)); ?>
 							
 							<div class="row center m-b-lg">
-							<div class="w90">
+							<div class="w90 cf">
 							<?php while ($Blog->have_posts()) : $Blog->the_post(); ?>	
 							
 								<?php get_template_part('module_card') ?>

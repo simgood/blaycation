@@ -17,4 +17,21 @@
 	cursor:pointer;
 }
 
+// Rotates
+.state-flip {
+	@include transition(0.4s);
+
+	&:hover {
+		@include rotate(180deg);
+	}
+}
+
+.state-hidden {
+	@include opacity(5);
+}
+
+.state-appear {
+	@include animate(10s, appear);
+}
+
 

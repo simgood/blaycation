@@ -18,12 +18,12 @@
 							<?php $Inspiration = new WP_Query(array( 
 								'post_type' => 'inspiration',
 								'posts_per_page' => '-1',
-								'orderby'=> 'title',
+								'orderby'=> 'rand',
 								'order' => 'ASC'
 							)); ?>
 							
 							<div class="row center m-b-lg">
-							<div class="w90">
+							<div class="w90 cf">
 							<?php while ($Inspiration->have_posts()) : $Inspiration->the_post(); ?>	
 							
 							<?php get_template_part('module_card_small') ?>

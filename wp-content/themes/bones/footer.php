@@ -1,9 +1,9 @@
-			<div class="center panel-300 relative" style="background:url('<?php echo get_template_directory_uri(); ?>/library/images/peru.jpg')no-repeat center center fixed;background-size:cover;">
+			<div class="center panel-300 relative" style="background:url('<?php echo get_template_directory_uri(); ?>/library/images/peru.jpg')no-repeat center center;background-size:cover;">
 				<div class="bg-tr-light absolute panel p-t-md">
 					<div class="text-dark em h3">
 						Let us create your ideal travel experience.
-					</div>
-					<a href="" class="btn-blue m">BUILD WITH BLAYCATION</a>
+						</div>
+					<a href="<?php echo home_url(); ?>/build-a-blaycation" class="btn-blue m">BUILD WITH BLAYCATION</a>
 				</div>
 			</div>
 
@@ -11,14 +11,28 @@
 				
 				<div class="fl-l text-white em">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> Ltd</div>
 				<div class="fl-r text-white heading">
+					<a href="" class="d-b fl-l p-h-sm h4">
+						<span class="icon icon-twitter"></span>
+					</a>
+					<a href="" class="d-b fl-l p-h-sm h4">
+						<span class="icon icon-facebook"></span>
+					</a>
+					<a href="" class="d-b fl-l p-h-sm h4">
+						<span class="icon icon-linkedin"></span>
+					</a>
+					<div class="fl-l">
+					&nbsp;|&nbsp;
 					<a href="">Blaycation Poker</a>
 					&nbsp;|&nbsp;
 					<a href="">News</a>
 					&nbsp;|&nbsp;
 					<a href="">Corporate Getaways</a>
+					</div>
 				</div>
 
 			</footer>
+
+			<?php get_template_part('module_callback_request_modal') ?>
 
 		</div>
 

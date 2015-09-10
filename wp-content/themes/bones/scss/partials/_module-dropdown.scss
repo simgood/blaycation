@@ -1,8 +1,8 @@
 // Dropdown Menu
 	
 	.dd {
-		text-align: left;
 		position: relative;
+
 		
 		.dd-menu {
 			max-height:0;
@@ -10,18 +10,24 @@
 			overflow:hidden;
 			position: absolute;
 			top:$space + 4;
-			left:$space;
+			left:-$space;
+			width:$space * 10;
 
 			z-index:4;
 			background:#fff;
 
 			@include transition(0.4s);
+			@include shadow;
+
+			a {
+				text-align: left;
+			}
 		}
 
 		.dd-menu_item {
 			display:block;
 			color:$dark;
-			padding:$space/4;		
+			padding:$space/4 $space;		
 		}
 
 	}
@@ -32,6 +38,12 @@
 		.dd-menu {
 			max-height:500px;
 			padding-top:$space /2;
+			padding-bottom:$space;
 		}
+
+			.state-flip {
+				@include rotate(180deg);
+			}
 	}
+
 
