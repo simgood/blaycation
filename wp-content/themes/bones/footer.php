@@ -7,26 +7,16 @@
 				</div>
 			</div>
 
-			<footer class="footer bg-dark cf p-v p-h" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer cf p-v p-h" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 				
-				<div class="fl-l text-white em">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> Ltd</div>
-				<div class="fl-r text-white heading">
-					<a href="" class="d-b fl-l p-h-sm h4">
-						<span class="icon icon-twitter"></span>
-					</a>
-					<a href="" class="d-b fl-l p-h-sm h4">
-						<span class="icon icon-facebook"></span>
-					</a>
-					<a href="" class="d-b fl-l p-h-sm h4">
-						<span class="icon icon-linkedin"></span>
-					</a>
+				<div class="fl-l text-purple em">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> Ltd</div>
+				<div class="fl-r text-purple heading">
 					<div class="fl-l">
+					<a href="<?php echo home_url(); ?>/poker">Blaycation Poker</a>
 					&nbsp;|&nbsp;
-					<a href="">Blaycation Poker</a>
+					<a href="<?php echo home_url(); ?>/blaycation-corporate-getaways">Corporate Getaways</a>
 					&nbsp;|&nbsp;
-					<a href="">News</a>
-					&nbsp;|&nbsp;
-					<a href="">Corporate Getaways</a>
+					<a href="<?php echo home_url(); ?>/terms-conditions">Terms &amp; Conditions</a>
 					</div>
 				</div>
 

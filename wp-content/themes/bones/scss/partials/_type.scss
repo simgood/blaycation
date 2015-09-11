@@ -8,10 +8,6 @@ p a,
 	color:#fff;
 }
 
-.heading {
-	font-family:$font-heading;
-}
-
 .text-gray {
 	color:#999;
 }
@@ -31,31 +27,37 @@ body {
 	text-rendering:optimizeLegibility;
 }
 
-// Standard font styles
-h1, h2, h3, h4 {
-	font-family: $font-heading;
-}
 
-h1, h2 {
+h1,  
+h2 {
 	text-transform: uppercase;
-}
-
-h1, .h1 {
+	font-family: $font-heading-light;
 	text-align: center;
-	font-weight:200;
 }
 
-h2, .h2 {
-	text-align: center;
-	font-weight:200;
+.h1 {
+	font-size:3.7em;
 }
 
-h3, .h3 {
-	font-weight: 500;
+.h2 {
+	font-size:2.3em;
 }
 
-h4, .h4 {
-	font-weight: 500;
+.h3 {
+	font-size:1.8em;
+}
+
+h3 {
+	font-family: $font-heading-medium;
+}
+
+.h4 {
+	font-size:1.4em;
+}
+
+h4 {
+	font-family: $font-heading-medium;
+	
 }
 
 em, .em {
@@ -76,26 +78,10 @@ em, .em {
 	margin:$space/2 0;
 	font-size:0.9em;
 }
-	
-	h1, .h1 {
-		font-size:3.7em;
-	}
 
-	h2, .h2 {
-		font-size:2.3em;
-	}
-
-	h3, .h3 {
-		font-size:1.8em;
-	}
-
-	h4, .h4 {
-		font-size:1.4em;
-	}
-
-	.text {
-		font-size:1.1em;
-	}
+.text {
+	font-size:1.1em;
+}
 
 // Smaller than Desktop
 @media screen and (max-width:$breakpoint-tablet) {
@@ -122,6 +108,13 @@ em, .em {
 
 }
 
+.heading {
+	font-family:$font-heading-medium;
+}
+
+.heading-light {
+	font-family:$font-heading-light;
+}
 
 // The text, body content container
 .text {
@@ -138,7 +131,7 @@ em, .em {
 	b, strong {
 		display:inline-block; // to add margin
 		margin-top:$space;
-		font-family: $font-heading;
+		font-family: $font-heading-medium;
 		@extend .h4;
 	}
 }

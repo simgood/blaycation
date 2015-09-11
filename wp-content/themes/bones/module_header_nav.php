@@ -4,21 +4,23 @@
 		<div class="logo fl-l p-l-sm p-v-sm text-purple">
 			<a href="<?php echo home_url(); ?>">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.gif" width="80" alt="Blaycation Logo" itemscope="logo"> -->
-				<div class="icon icon-logo h2 fl-l"></div>
-				<h2 class="h2 fl-l no-margin p-l-sm state-appear">BLAYCATION</h2>
+				<span class="icon icon-logo h2 fl-l"></span>
+				<h3 class="h3 heading-light fl-l no-margin p-l-sm state-appear" style="padding-top:4px;">BLAYCATION</h3>
 			</a>
 		</div>
-		<div class="fl-r p-sm d-mob mobile-nav_toggle">MENU <span class="icon icon-menu"></span></div>
+		<div class="fl-r p-sm d-tab mobile-nav_toggle">MENU <span class="icon icon-menu"></span></div>
 	</div>	
 
-	<nav class="nav cf p-t-sm center vw heading" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		<div class="d-mob absolute pos-t pos-r p-sm h4 mobile-nav_toggle">
+	<nav class="nav cf p-t-sm center vw heading-light" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<div class="d-tab absolute pos-t pos-r p-sm h4 mobile-nav_toggle">
 			<div class="icon icon-close"></div>
 		</div>
 		<div class="nav-container cf d-ib h100">
 		<div class="nav-item d-b fl-l p-h dd">
-			<div class="d-mob h2 left p-t-sm p-l-sm p-b">
-				<span class="icon icon-logo"></span>
+			<div class="d-tab h2 left p-t-sm p-l-sm p-b">
+				<a href="<?php echo home_url(); ?>">
+					<span class="icon icon-logo"></span>
+				</a>
 			</div>
 			<a class="d-b" href="<?php echo home_url(); ?>/destinations">DESTINATIONS 
 				<div class="fl-r icon icon-angle-down state-flip"></div>
@@ -80,8 +82,27 @@
 		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/blaycation-insider">BLAYCATION INSIDER</a>
 		</div>
-		<div class="nav-item d-b fl-l p-h">
-			<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US</a>
+		<div class="nav-item d-b fl-l p-h dd">
+			<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
+			<div class="dd-menu">
+				<a href="<?php echo home_url(); ?>/about-us">
+					<div class="dd-menu_item">
+						About Blaycation
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/poker">
+					<div class="dd-menu_item">
+						Blaycation Poker
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/blaycation-corporate-getaways">
+					<div class="dd-menu_item">
+						Corporate Getaways &amp; Incentives
+					</div>
+				</a>
+			</div>
 		</div>
 		<div class="nav-item d-b fl-l p-h dd">
 			<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">BOOK NOW 
@@ -93,7 +114,7 @@
 						Request a Callback
 					</div>
 				</a>
-				<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">
+				<a href="<?php echo home_url(); ?>/build-a-blaycation">
 					<div class="dd-menu_item">
 						Build a Blaycation
 					</div>
@@ -104,6 +125,14 @@
 					</div>
 				</a>
 			</div>
+		</div>
+		<div class="nav-item d-b fl-l p-h text-purple">
+			<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation" class="d-b fl-l p-h-sm">
+				<span class="icon icon-twitter"></span>
+			</a>
+			<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation" class="d-b fl-l p-h-sm">
+				<span class="icon icon-facebook"></span>
+			</a>
 		</div>
 
 		</div> <!-- Nav Container -->

@@ -20,6 +20,11 @@ section, .section {
 	height:100%;
 }	
 
+.panel-500 {
+	@extend %panel;
+	min-height:500px;
+}
+
 .panel-400 {
 	@extend %panel;
 	min-height:400px;

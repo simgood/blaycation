@@ -3,7 +3,7 @@
 $blue:#3ebfed;
 $orange:#ff8955;
 $purple:#596387;
-$dark:#212121;
+$dark:#444;
 $gray:#6d6d6d;
 $gray-light:lighten(#6d6d6d, 50%);
 
@@ -17,7 +17,8 @@ $transparent-dark:rgba($dark, 0.7);
 $transparent-light:rgba(#fff,0.7);
 
 // Typography
-$font-heading: 'Gotham', 'Verdana', sans-serif;
+$font-heading-light: 'Gotham Light', 'Verdana', sans-serif;
+$font-heading-medium: 'Gotham Book', 'Verdana', sans-serif;
 $font-body: 'Merriweather', 'Georgia', serif;
 
 // Breakpoints
