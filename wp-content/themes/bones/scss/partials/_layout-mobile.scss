@@ -1,13 +1,91 @@
+// Specific Device Displays
+// -- Mobile Only
+.d-mob {
+	display:none;
+}
+
+
 
 @media (max-width: $breakpoint-mobile) {
 
 	// //Fix the proportions of img
-	* {
-		font-size:97%;
+	body {
+		font-size:76%;
 	}
 
-	.card-img {
-		height:130px;
+	// Fill in width on mobile;
+	.nav {
+		width:75%;
+	}	
+
+	.panel-500 {
+		min-height:0;
+		height:100vh !important;
+	}
+
+	.nav-container {
+		margin-top: 10%;
+		padding-bottom:20%;
+	}
+
+	.footer * {
+		display:block;
+		margin-top:$space;
+		text-align: center;
+	}
+
+	.footer .fl-l,
+	.footer .fl-r {
+		float:none;
+	}
+
+	//Defines main content areas
+	.text.w70 {
+		width:94%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	// Client Section
+	.panel-300 .w60 {
+		width:80%;
+	}
+
+	.tabset.w80 {
+		width:98%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.tabset.panel-300 {
+		min-height:500px;
+	}
+
+	.tab-content {
+		top:20%;
+	}
+
+	.tab.w25 {
+		width:48%;
+		padding-top:$space / 2;
+		padding-bottom:$space / 2;
+	}
+
+
+	// Contextual Cards at the bottom of each page
+	.card.w30 {
+		width:98%;
+		float:none;
+		display:inline-block;
+	}
+
+	.row .w90 {
+		width:100%;
+	}
+
+	// Hides / Shows according to device size
+	.d-mob {
+		display:block;
 	}
 
 	.m-v-sm {
@@ -17,6 +95,12 @@
 
 	.p-t-md {
 		padding-top:50px;
+	}
+
+
+	.gform_wrapper .gfield,
+	.gform_wrapper .gform_footer {
+		width:100%;
 	}
 
 }

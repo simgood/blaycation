@@ -1,10 +1,30 @@
-<header class="header" role="banner" itemscope itemtype="">
+<header class="header fixed vw pos-l pos-t" role="banner" itemscope itemtype="">
 
-	<div class="logo" itemscope="logo"><a href="<?php echo home_url(); ?>">LOGO</a></div>
+	<div class="mob-fixed-header">
+		<div class="logo fl-l p-l-sm p-v-sm text-purple">
+			<a href="<?php echo home_url(); ?>">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.gif" width="80" alt="Blaycation Logo" itemscope="logo"> -->
+				<span class="icon icon-logo h2 fl-l"></span>
+				<h3 class="h3 heading-light fl-l no-margin p-l-sm state-appear" style="padding-top:4px;">BLAYCATION</h3>
+			</a>
+		</div>
+		<div class="fl-r p-sm d-tab mobile-nav_toggle">MENU <span class="icon icon-menu"></span></div>
+	</div>	
 
-	<nav class="nav cf p-t center vw heading" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		<div class="nav-item d-ib p-h dd">
-			<a class="d-b" href="<?php echo home_url(); ?>/destinations">DESTINATIONS</a>
+	<nav class="nav cf p-t-sm center vw heading-light" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		<div class="d-tab absolute pos-t pos-r p-sm h4 mobile-nav_toggle">
+			<div class="icon icon-close"></div>
+		</div>
+		<div class="nav-container cf d-ib h100">
+		<div class="nav-item d-b fl-l p-h dd">
+			<div class="d-tab h2 left p-t-sm p-l-sm p-b">
+				<a href="<?php echo home_url(); ?>">
+					<span class="icon icon-logo"></span>
+				</a>
+			</div>
+			<a class="d-b" href="<?php echo home_url(); ?>/destinations">DESTINATIONS 
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
 				
 				<div class="dd-menu">
 						<a href="<?php echo home_url(); ?>/destinations">
@@ -56,18 +76,67 @@
 						</a>
 				</div>
 		</div>
-		<div class="nav-item d-ib p-h">
+		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/inspirations">INSPIRATIONS</a>
 		</div>
-		<div class="nav-item d-ib p-h">
+		<div class="nav-item d-b fl-l p-h">
 			<a class="d-b" href="<?php echo home_url(); ?>/blaycation-insider">BLAYCATION INSIDER</a>
 		</div>
-		<div class="nav-item d-ib p-h">
-			<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US</a>
+		<div class="nav-item d-b fl-l p-h dd">
+			<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
+			<div class="dd-menu">
+				<a href="<?php echo home_url(); ?>/about-us">
+					<div class="dd-menu_item">
+						About Blaycation
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/poker">
+					<div class="dd-menu_item">
+						Blaycation Poker
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/blaycation-corporate-getaways">
+					<div class="dd-menu_item">
+						Corporate Getaways &amp; Incentives
+					</div>
+				</a>
+			</div>
 		</div>
-		<div class="nav-item d-ib p-h">
-			<a class="d-b" href="<?php echo home_url(); ?>/build-a-blaycation">BUILD A BLAYCATION</a>
+		<div class="nav-item d-b fl-l p-h dd">
+			<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">BOOK NOW 
+				<div class="fl-r icon icon-angle-down state-flip"></div>
+			</a>
+			<div class="dd-menu">
+				<a>
+					<div class="dd-menu_item modal-window-toggle">
+						Request a Callback
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/build-a-blaycation">
+					<div class="dd-menu_item">
+						Build a Blaycation
+					</div>
+				</a>
+				<a href="tel:1-902-441-5664">
+					<div class="dd-menu_item">
+						Call 1-902-441-5664
+					</div>
+				</a>
+			</div>
 		</div>
+		<div class="nav-item d-b fl-l p-h text-purple">
+			<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation" class="d-b fl-l p-h-sm">
+				<span class="icon icon-twitter"></span>
+			</a>
+			<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation" class="d-b fl-l p-h-sm">
+				<span class="icon icon-facebook"></span>
+			</a>
+		</div>
+
+		</div> <!-- Nav Container -->
+
 	</nav>
 
 

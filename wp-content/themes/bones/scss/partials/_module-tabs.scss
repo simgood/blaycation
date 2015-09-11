@@ -6,10 +6,6 @@
 	
 }
 
-.tab-toggle {
-	
-}
-
 // Hides the tabs when not ::checked
 .tab-content {
 	display:none;
@@ -17,15 +13,22 @@
 	left:0;
 }
 
-input[type="radio"] {
+.tab-toggle {
+	position:absolute;
+	left:-99999px;
 	visibility: hidden;
+}
+
+.tab-label {
+	color:#999;
+	font-family: $font-heading-medium;
 }
 
 
 // Makes the tabs work
-input[type="radio"]:checked {
+.tab-toggle:checked {
 
-	& ~ .label {
+	& ~ .tab-label {
 		color:$dark;
 	}
 	

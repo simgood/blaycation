@@ -1,4 +1,8 @@
-.nav {
+.header {
+	background:#fff;
+	z-index:10;
 
+	@include shadow;
+	@include transition(1s);
 }
 

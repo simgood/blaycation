@@ -22,7 +22,7 @@
 							)); ?>
 							
 							<div class="row center m-b-lg">
-							<div class="w90">
+							<div class="w90 cf">
 							<?php while ($Destination->have_posts()) : $Destination->the_post(); ?>	
 							
 								<?php get_template_part('module_card') ?>

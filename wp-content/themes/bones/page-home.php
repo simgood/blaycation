@@ -32,9 +32,15 @@
 							<?php while ($Destination->have_posts()) : $Destination->the_post(); ?>	
 							
 								<div class="card w25 m-v-sm">
-									<div class="card-img relative">
+									<div class="card-img relative img-wide">
 										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="anchor">
-											<img src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
+											<?php 
+												$image = get_field('banner_image'); 
+												$size = 'thumbnail';
+												if ($image) {
+													echo wp_get_attachment_image( $image, $size );
+												}
+											?>	
 											<h4 class="h4 card-title no-margin center p-t-md absolute pos-tl text-white fill bg-tr-purple">
 												<?php the_title(); ?>
 											</h4>
@@ -59,7 +65,7 @@
 								
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab1" checked/>						
-									<label class="label" for="tab1" class="center"><?php the_field("tab_one_title"); ?></label>
+									<label class="tab-label" for="tab1" class="center"><?php the_field("tab_one_title"); ?></label>
 													
 									<div class="tab-content w100 p-sm">
 										<div class="w90 left text_sm">
@@ -70,7 +76,7 @@
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab2"/>
-									<label class="label" for="tab2" class="center"><?php the_field('tab_two_title'); ?></label>
+									<label class="tab-label" for="tab2" class="center"><?php the_field('tab_two_title'); ?></label>
 									<div class="tab-content w100 p-sm">
 										<div class="w90 left text_sm">
 											<?php the_field('tab_two_content'); ?>
@@ -80,7 +86,7 @@
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab3"/>
-									<label class="label" for="tab3" class="center"><?php the_field('tab_three_title'); ?></label>
+									<label class="tab-label" for="tab3" class="center"><?php the_field('tab_three_title'); ?></label>
 									<div class="tab-content w100 p-sm">
 										<div class="w90 left text_sm">
 											<?php the_field('tab_three_content'); ?>
@@ -90,7 +96,7 @@
 
 								<div class="tab w25 center">
 									<input type="radio" class="tab-toggle" name="tab-toggle" id="tab4"/>
-									<label class="label" for="tab4" class="center"><?php the_field('tab_four_title'); ?></label>
+									<label class="tab-label" for="tab4" class="center"><?php the_field('tab_four_title'); ?></label>
 									<div class="tab-content w100 p-sm">
 										<div class="w90 left text_sm">
 											<?php the_field('tab_four_content'); ?>
@@ -106,8 +112,8 @@
 
 					<section class="panel-300 bg-purple">
 						<h2 class="h2">WHAT OUR CLIENTS SAY</h2>
-							<div class="w60">
-								<ul class="slider cf">
+							<div class="w60 slider">
+								<ul class="cf">
 									<li>
 										<p class="em">
 											<?php the_field('client_quote_one') ?>
@@ -160,7 +166,13 @@
 								<div class="card w25 m-v-sm">
 									<div class="card-img relative">
 										<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="anchor">
-											<img src="<?php the_field('banner_image'); ?>" alt="<?php the_title(); ?>">
+											<?php 
+												$image = get_field('banner_image'); 
+												$size = 'thumbnail';
+												if ($image) {
+													echo wp_get_attachment_image( $image, $size );
+												}
+											?>
 											<h4 class="h4 card-title no-margin center p-t-md absolute pos-tl text-white fill bg-tr-purple">
 												<?php the_title(); ?>
 											</h4>

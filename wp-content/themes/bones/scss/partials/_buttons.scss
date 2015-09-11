@@ -1,6 +1,7 @@
 $border-w: 1px;
 
-button {
+button,
+.button {
 	border:0;
 	cursor:pointer;
 }
@@ -8,11 +9,12 @@ button {
 // Base button styles
 $btn-font-size: 0.75em;
 
-.btn, %btn {
+.btn,
+%btn {
 	cursor:pointer;
 	text-transform: uppercase;
 	display:inline-block;
-	font-family: $font-heading;
+	font-family: $font-heading-medium;
 	font-weight:500;
 	font-size: $btn-font-size;
 	text-align: center;
@@ -23,7 +25,8 @@ $btn-font-size: 0.75em;
 	padding:$space/1.2 $space*1.4;
 }
 
-.btn-blue {
+.btn-blue,
+.button {
 	@extend %btn;
 	background:$blue;
 	color:#fff;
@@ -41,6 +44,7 @@ $btn-font-size: 0.75em;
 	&:hover {
 		background:rgba($purple, 0.15);
 		color:$purple;
+		text-decoration: none;
 	}
 }
 
@@ -53,4 +57,41 @@ $btn-font-size: 0.75em;
 
 }
 
+// Social Buttons
+
+%btn-social {
+	@include square(1.8em);
+	@include transition(0.2s);
+	color:#fff;
+	text-align: center;
+	font-size: 1em;
+
+	.icon {
+		line-height: 1.5em;
+	}
+
+	&:hover {
+		@include shadow;
+	}
+}
+
+.btn-social_twitter {
+	@extend %btn-social;
+	background:$color-twitter;
+}
+
+.btn-social_facebook {
+	@extend %btn-social;
+	background:$color-facebook;
+}
+
+.btn-social_gplus {
+	@extend %btn-social;
+	background:$color-gplus;
+}
+
+.btn-social_linkedin {
+	@extend %btn-social;
+	background:$color-linkedin;
+}
 

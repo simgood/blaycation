@@ -1,6 +1,89 @@
+// Specific Device Displays
+// -- tablet and up
+.d-tab {
+	display:none;
+}
 
 @media (max-width: $breakpoint-tablet) {
- 
+
+	.d-tab {
+		display:block;
+	}
+
+	
+	.mob-fixed-header {
+		width:100%;
+		background:#fff;
+		top:0;
+		left:0;
+		z-index:10;
+
+		content: "";
+  		display: table;
+  		clear: both;
+
+  		&:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+  		}	
+	}
+
+	.nav {
+		width:40%;
+		height:100%;
+		border-right:1px solid $purple;
+
+		margin-left: auto;
+		margin-right: auto;
+		background:#fff;
+		z-index:10;
+
+		position: fixed;
+		top:0;
+		//right:20%;
+		left:-100%;
+		overflow:hidden;
+		transition:0.4s;
+
+		padding-top:18px;
+	}
+
+	//Mobile Nav Menu OPEN state
+	.mobile-nav_open {
+		left:0;
+	}
+
+	.mobile-nav_toggle {
+		cursor:pointer;
+		font-family: 'Gotham';
+	}
+
+	.nav-container {
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		max-height:100%;
+		overflow:scroll;
+	}
+
+	.nav-item {
+		display:block;
+		text-align: left;
+		padding:$space;
+	}
+
+	// Show dropdown menu in mobile navigation menu
+	.nav .dd .dd-menu {
+		position: static;
+		max-height:100%;
+		box-shadow: none;
+	}
+
+	.nav .dd-menu_item {
+		padding-left:$space;
+	}
+
  	// 4-across card layouts
 	.card.w25 {
 		width: 49%;
