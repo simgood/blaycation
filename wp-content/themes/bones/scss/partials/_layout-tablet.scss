@@ -1,13 +1,13 @@
 // Specific Device Displays
 // -- tablet and up
 .d-tab {
-	display:none;
+	display:none !important;
 }
 
 @media (max-width: $breakpoint-tablet) {
 
 	.d-tab {
-		display:block;
+		display:block !important;
 	}
 
 	

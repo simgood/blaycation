@@ -6,3 +6,12 @@
 	@include transition(1s);
 }
 
+.header-cta {
+	background:$purple;
+	color:#fff;
+	z-index:9;
+
+	@include shadow;
+	@include transition(1s);
+}
+

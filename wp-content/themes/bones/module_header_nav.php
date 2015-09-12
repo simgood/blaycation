@@ -27,7 +27,7 @@
 			</a>
 				
 				<div class="dd-menu">
-						<a href="<?php echo home_url(); ?>/destinations">
+						<a href="<?php echo home_url(); ?>/destinations/africa">
 							<div class="dd-menu_item">
 								Africa
 							</div>
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 		<div class="nav-item d-b fl-l p-h dd">
-			<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">BOOK NOW 
+			<a class="" href="<?php echo home_url(); ?>/build-a-blaycation">CONTACT
 				<div class="fl-r icon icon-angle-down state-flip"></div>
 			</a>
 			<div class="dd-menu">
@@ -124,21 +124,36 @@
 						Call 1-902-441-5664
 					</div>
 				</a>
+				<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation">
+					<div class="dd-menu_item">
+						<span class="icon icon-twitter"></span>&nbsp;Twitter
+					</div>
+				</a>
+				<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation">
+					<div class="dd-menu_item">
+						<span class="icon icon-facebook"></span>&nbsp;Facebook
+					</div>
+				</a>
 			</div>
-		</div>
-		<div class="nav-item d-b fl-l p-h text-purple">
-			<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation" class="d-b fl-l p-h-sm">
-				<span class="icon icon-twitter"></span>
-			</a>
-			<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation" class="d-b fl-l p-h-sm">
-				<span class="icon icon-facebook"></span>
-			</a>
 		</div>
 
 		</div> <!-- Nav Container -->
 
 	</nav>
 
-
 </header>
+
+<header class="fixed vw center pos-l pos-t header-cta p-v-sm p-h-lg">
+		<div class="icon icon-logo d-ib"></div>
+		<a href="tel:1-902-441-5664">
+			<p class="no-margin d-ib heading p-l-sm">1-902-441-5664</p>
+		</a>
+		<a href="mailto:mark@blaycation.com">	
+			<p class="no-margin d-ib heading p-l-sm">mark@blaycation.com</p>
+		</a>
+</header>
+
+
+
+
 
