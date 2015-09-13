@@ -49,21 +49,27 @@ jQuery(document).ready(function($) {
     	});
 	});
 
-	// Fancy Header pop-down thingy
-	var lastScrollTop = 0;
 
-	$(window).scroll(function(event){
-	   var st = $(this).scrollTop();
+	if ($(window).width() >= 800){
 
-	   if (st > lastScrollTop){
-	       // downscroll code
-	    	$('header.header').css('top','-100%');	
-	   } else {
-	      // upscroll code
-	      	$('header.header').css('top','0');
-	   }
+		// Fancy Header pop-down thingy
+		var lastScrollTop = 0;
 
-	   lastScrollTop = st;
-	});
+		$(window).scroll(function(event){
+		   var st = $(this).scrollTop();
+
+		   if (st > lastScrollTop){
+		       // downscroll code
+		    	$('header.header').css('top','-100%');	
+		   } else {
+		      // upscroll code
+		      	$('header.header').css('top','0');
+		   }
+
+		   lastScrollTop = st;
+		});
+	};
+
+
 	
 }); /* end of as page load scripts */

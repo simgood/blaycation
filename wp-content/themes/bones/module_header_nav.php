@@ -126,12 +126,12 @@
 				</a>
 				<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation">
 					<div class="dd-menu_item">
-						<span class="icon icon-twitter"></span>&nbsp;Twitter
+						<span class="icon icon-facebook"></span>&nbsp;Facebook
 					</div>
 				</a>
 				<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation">
 					<div class="dd-menu_item">
-						<span class="icon icon-facebook"></span>&nbsp;Facebook
+						<span class="icon icon-twitter"></span>&nbsp;Twitter
 					</div>
 				</a>
 			</div>

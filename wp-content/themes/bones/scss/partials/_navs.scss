@@ -7,8 +7,8 @@
 }
 
 .header-cta {
-	background:$purple;
-	color:#fff;
+	background:#fff;
+	color:$purple;
 	z-index:9;
 
 	@include shadow;

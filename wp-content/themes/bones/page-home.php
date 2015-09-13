@@ -186,6 +186,29 @@
 					
 					</section>
 
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php endwhile; // Restart the loop ?>
+					<section class="panel bg-gray-light p-v-md cf">
+						<?php if (get_field('partner_1') && get_field('partner_1') != "") { ?>
+						<h2 class="h2">OUR PARTNERS</h2>
+							<div class="w60 center cf">
+								<div class="w25 d-ib p-v-sm">
+									<img src="<?php the_field('partner_1') ?>" alt="">
+								</div>
+								<div class="w25 d-ib p-v-sm">
+									<img src="<?php the_field('partner_2') ?>" alt="">
+								</div>
+								<div class="w25 d-ib p-v-sm">
+									<img src="<?php the_field('partner_3') ?>" alt="">
+								</div>
+								<div class="w25 d-ib p-v-sm">
+									<img src="<?php the_field('partner_4') ?>" alt="">
+								</div>
+							</div>
+						<?php } ?>		
+					</section>
+				<?php endif; ?>	
+
+
 				</article>
 
 		</main>

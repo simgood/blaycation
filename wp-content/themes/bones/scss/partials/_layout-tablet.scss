@@ -10,6 +10,10 @@
 		display:block !important;
 	}
 
+	// Skip the fixed- BG attachment on tablets and mobile
+	header.panel-500 {
+		background-attachment: local !important;
+	}
 	
 	.mob-fixed-header {
 		width:100%;

@@ -16,7 +16,7 @@
 
 								$post_object = get_field('related_blog_link');
 
-								if( $post_object ): 
+								if( $post_object && $post_object != "" ) : 
 									// override $post
 									$post = $post_object;
 
