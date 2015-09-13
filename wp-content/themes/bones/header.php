@@ -15,8 +15,8 @@
 
 		<?php // open graph ?>
 		<meta property="og:site_name" content="Blaycation"/>
-	    <meta property="og:type" content="website"/>
-	    <meta property="og:title" content="blaycation.com"/>
+	    <meta property="og:type" content="travel website"/>
+	    <meta property="og:title" content="Blaycation.com"/>
 	    <meta property="og:image" content="
 			<?php 
 				$image = get_field('banner_image'); 
@@ -39,7 +39,7 @@
 	    <meta name="og:description" content="A custom, curated, carefully personalized bucket-list-worthy vacation experience you will remember for the rest of your life" />
 
 		<?php // mobile meta (hooray!) ?>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-57x57.png">
