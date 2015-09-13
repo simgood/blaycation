@@ -48,50 +48,24 @@ $btn-font-size: 0.75em;
 	}
 }
 
-// Base outline button styles
-[class*="btn-line_"] {
-	border-width:$border-w;
-	border-style: solid;
-	background:transparent;
-	padding:$space - 2px $space - 2px;
-
-}
-
-// Social Buttons
-
-%btn-social {
-	@include square(1.8em);
-	@include transition(0.2s);
-	color:#fff;
+.btn-line_round_blue {
+	border:1px solid $blue;
+	color:$blue;
+	padding:$space/2 $space;
 	text-align: center;
-	font-size: 1em;
+	display:inline-block;
+	border-top-left-radius: 28px;
+	border-top-right-radius: 28px;
+	border-bottom-left-radius: 28px;
+	border-bottom-right-radius: 28px;
 
-	.icon {
-		line-height: 1.5em;
-	}
+	@include transition(0.3s);
 
 	&:hover {
-		@include shadow;
+		background:$blue;
+		color:#fff;
 	}
 }
 
-.btn-social_twitter {
-	@extend %btn-social;
-	background:$color-twitter;
-}
 
-.btn-social_facebook {
-	@extend %btn-social;
-	background:$color-facebook;
-}
-
-.btn-social_gplus {
-	@extend %btn-social;
-	background:$color-gplus;
-}
-
-.btn-social_linkedin {
-	@extend %btn-social;
-	background:$color-linkedin;
-}
 

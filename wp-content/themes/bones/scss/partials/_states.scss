@@ -1,8 +1,8 @@
 .nav-item {
 	a {
 		@include transition(0.4s);
-		border-bottom:2px solid transparent;
-		padding-bottom:$space / 4;
+		border-bottom:3px solid transparent;
+		padding-bottom:$space / 3;
 	}
 
 	a:hover {

@@ -7,9 +7,12 @@
  */
 article,
 aside,
+details,
+figcaption,
 figure,
 footer,
 header,
+hgroup,
 main,
 nav,
 section,
@@ -122,6 +125,56 @@ hr {
   box-sizing: content-box;
   height: 0; }
 
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
 
 /* ==========================================================================
    Embedded content
@@ -150,6 +203,23 @@ figure {
 /* ==========================================================================
    Forms
    ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
 
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -640,37 +710,22 @@ button,
     color: #596387;
     text-decoration: none; }
 
-[class*="btn-line_"] {
-  border-width: 1px;
-  border-style: solid;
-  background: transparent;
-  padding: 14px 14px; }
-
-.btn-social_twitter, .btn-social_facebook, .btn-social_gplus, .btn-social_linkedin {
-  height: 1.8em;
-  width: 1.8em;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  color: #fff;
+.btn-line_round_blue {
+  border: 1px solid #3ebfed;
+  color: #3ebfed;
+  padding: 8px 16px;
   text-align: center;
-  font-size: 1em; }
-  .btn-social_twitter .icon, .btn-social_facebook .icon, .btn-social_gplus .icon, .btn-social_linkedin .icon {
-    line-height: 1.5em; }
-  .btn-social_twitter:hover, .btn-social_facebook:hover, .btn-social_gplus:hover, .btn-social_linkedin:hover {
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5); }
-
-.btn-social_twitter {
-  background: #55acee; }
-
-.btn-social_facebook {
-  background: #3B5998; }
-
-.btn-social_gplus {
-  background: #DC4E41; }
-
-.btn-social_linkedin {
-  background: #0077b5; }
+  display: inline-block;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .btn-line_round_blue:hover {
+    background: #3ebfed;
+    color: #fff; }
 
 hr {
   width: 45%;
@@ -887,6 +942,7 @@ section, .section {
     left: 0;
     position: relative; } }
 .header {
+  position: relative;
   background: #fff;
   z-index: 10;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
@@ -907,8 +963,8 @@ section, .section {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 4px; }
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5.33333px; }
 .nav-item a:hover {
   color: #596387;
   border-bottom-color: #596387; }

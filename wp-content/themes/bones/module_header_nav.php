@@ -1,7 +1,7 @@
-<header class="header fixed vw pos-l pos-t" role="banner" itemscope itemtype="">
+<header class="header fixed vw pos-l pos-t p-v-sm" role="banner" itemscope itemtype="">
 
-	<div class="mob-fixed-header">
-		<div class="logo fl-l p-l-sm p-v-sm text-purple">
+	<div class="mob-fixed-header cf">
+		<div class="logo absolute pos-t pos-l p-l-sm text-purple" style="padding-top:10px;">
 			<a href="<?php echo home_url(); ?>">
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.gif" width="80" alt="Blaycation Logo" itemscope="logo"> -->
 				<span class="icon icon-logo h2 fl-l"></span>
@@ -11,11 +11,19 @@
 		<div class="fl-r p-sm d-tab mobile-nav_toggle">MENU <span class="icon icon-menu"></span></div>
 	</div>	
 
+	<div class="cf absolute pos-t pos-r" style="margin-top:12px;margin-right:16px;">
+		<a href="tel:1-902-441-5664">
+			<div class="btn-line_round_blue">
+				+1-902-441-5664
+			</div>
+		</a>
+	</div>
+
 	<nav class="nav cf p-t-sm center vw heading-light" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		<div class="d-tab absolute pos-t pos-r p-sm h4 mobile-nav_toggle">
 			<div class="icon icon-close"></div>
 		</div>
-		<div class="nav-container cf d-ib h100">
+		<div class="nav-container cf d-ib p-l h100">
 		<div class="nav-item d-b fl-l p-h dd">
 			<div class="d-tab h2 left p-t-sm p-l-sm p-b">
 				<a href="<?php echo home_url(); ?>">
@@ -143,7 +151,7 @@
 
 </header>
 
-<header class="fixed vw center pos-l pos-t header-cta p-v-sm p-h-lg">
+<!-- <header class="fixed vw center pos-l pos-t header-cta p-v-sm p-h-lg">
 		<div class="icon icon-logo d-ib"></div>
 		<a href="tel:1-902-441-5664">
 			<p class="no-margin d-ib heading p-l-sm">1-902-441-5664</p>
@@ -151,7 +159,7 @@
 		<a href="mailto:mark@blaycation.com">	
 			<p class="no-margin d-ib heading p-l-sm">mark@blaycation.com</p>
 		</a>
-</header>
+</header> -->
 
 
 
