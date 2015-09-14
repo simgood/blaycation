@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 	});
 
 
-	if ($(window).width() >= 800){
+	if ($(window).width() >= 900){
 
 		// Fancy Header pop-down thingy
 		var lastScrollTop = 0;

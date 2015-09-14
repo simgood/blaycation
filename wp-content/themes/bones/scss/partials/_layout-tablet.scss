@@ -4,7 +4,12 @@
 	display:none !important;
 }
 
+
 @media (max-width: $breakpoint-tablet) {
+
+	.logo h3 {
+		display:none;
+	}
 
 	.d-tab {
 		display:block !important;
@@ -14,6 +19,14 @@
 	header.panel-500 {
 		background-attachment: local !important;
 	}
+
+	.main-header {
+		padding-bottom:8px;
+	}
+
+	.main-cta {
+		padding-top:10px !important;
+	}
 	
 	.mob-fixed-header {
 		width:100%;
@@ -21,6 +34,7 @@
 		top:0;
 		left:0;
 		z-index:10;
+		padding-top:0 !important;
 
 		content: "";
   		display: table;
@@ -31,6 +45,7 @@
   			display: table;
   			clear: both;
   		}	
+
 	}
 
 	.nav {
@@ -75,6 +90,7 @@
 		display:block;
 		text-align: left;
 		padding:$space;
+		float:none;
 	}
 
 	// Show dropdown menu in mobile navigation menu
