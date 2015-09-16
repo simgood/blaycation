@@ -57,12 +57,13 @@ register_post_type( 'blog', array(
   'supports' => array( 'title', 'editor', 'custom-fields' )
 ));
 
-register_post_type( 'news', array(
+register_post_type( 'property', array(
   'labels' => array(
-    'name' => 'Press',
-    'singular_name' => 'news',
+    'name' => 'Property',
+    'singular_name' => 'property',
    ),
-  'description' => 'Add new news or press articles!',
+  'taxonomies' => array('category'),
+  'description' => 'Add new property!',
   'public' => true,
   'menu_position' => 20,
   'supports' => array( 'title', 'editor', 'custom-fields' )

@@ -1,4 +1,4 @@
-<?php get_header(); /* Template Name: Destination Page */?>
+<?php get_header(); /* Template Name: Property Page */?>
 
 		<div id="content">
 
@@ -8,24 +8,25 @@
 				<article role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 					<?php get_template_part('module_banner_header'); ?>	
-
+							 
 					<?php get_template_part('module_page_content') ?>
+					
+					<section>								
 
-					<section>										
 						<?php endif; wp_reset_postdata();?>
 							<?php // Calling Destinations ?>
-							<?php $Destination = new WP_Query(array( 
-								'post_type' => 'destination',
+							<?php $Inspiration = new WP_Query(array( 
+								'post_type' => 'property',
 								'posts_per_page' => '-1',
-								'orderby'=> 'title',
+								'orderby'=> 'rand',
 								'order' => 'ASC'
 							)); ?>
 							
 							<div class="row center m-b-lg">
 							<div class="w90 cf">
-							<?php while ($Destination->have_posts()) : $Destination->the_post(); ?>	
+							<?php while ($Inspiration->have_posts()) : $Inspiration->the_post(); ?>	
 							
-								<?php get_template_part('module_card_small') ?>
+							<?php get_template_part('module_card_small') ?>
 
 							<?php endwhile; ?>	
 							</div>

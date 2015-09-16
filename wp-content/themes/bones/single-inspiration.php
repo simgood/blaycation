@@ -12,7 +12,7 @@
 					<?php get_template_part('module_page_content') ?>
 
 					<section>
-						<h2 class="h2">POPULAR DESTINATIONS</h2>
+						<h3 class="h3">MORE INSPIRATION</h3>
 							<hr/>										
 
 						<?php endif; wp_reset_postdata();?>
@@ -21,17 +21,10 @@
 							<?php 
 
 							$args = array(
-								'post_type' => 'region',
+								'post_type' => 'inspiration',
 								'posts_per_page' => '-1',
 								'orderby'=> 'rand',
 								'order' => 'ASC',
-								'tax_query' => array(
-									array(
-										'taxonomy' => 'category',
-										'field'    => 'slug',
-										'terms'    => get_the_title()
-									),
-								),
 							);
 
 							$query = new WP_Query( $args ) 

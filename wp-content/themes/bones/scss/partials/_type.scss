@@ -16,6 +16,10 @@ p a,
 	color:$purple;
 }
 
+.text-blue {
+	color:$blue;
+}
+
 body {
 	font-family: $font-body;
 	color:$dark;
@@ -49,6 +53,7 @@ h2 {
 
 .h3 {
 	font-size:1.8em;
+	text-align: center;
 }
 
 h3 {
@@ -118,6 +123,7 @@ em, .em {
 
 .heading-light {
 	font-family:$font-heading-light;
+	font-weight:200;
 }
 
 // The text, body content container

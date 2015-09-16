@@ -11,7 +11,9 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title>Blaycation | <?php the_title(); ?></title>
+		<meta name="description" content="A custom, curated, carefully personalized bucket-list-worthy vacation experience you will remember for the rest of your life" />
+
 
 		<?php // open graph ?>
 		<meta property="og:site_name" content="Blaycation"/>

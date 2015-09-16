@@ -10,33 +10,33 @@
 					<?php get_template_part('module_banner_header'); ?>	
 
 					<?php get_template_part('module_page_content') ?>
-
+				
 					<section>
-						<h3 class="h3">POPULAR DESTINATIONS</h3>
+						<h3 class="h3 center">RELATED PROPERTIES</h3>
 							<hr/>										
 
 						<?php endif; wp_reset_postdata();?>
 							<?php // Calling inspirations ?>
-							
-							<?php 
+							<?php
+							$categories = get_the_category();
+							$category_id = $categories[0]->cat_ID;
 
 							$args = array(
-								'post_type' => 'region',
-								'posts_per_page' => '-1',
+								'post_type' => 'property',
+								'posts_per_page' => '3',
 								'orderby'=> 'rand',
 								'order' => 'ASC',
 								'tax_query' => array(
 									array(
 										'taxonomy' => 'category',
-										'field'    => 'slug',
-										'terms'    => get_the_title()
+										'field'    => 'id',
+										'terms'    => $category_id
 									),
 								),
 							);
-
 							$query = new WP_Query( $args ) 
-
 							?>
+
 							
 							<div class="row center m-b-lg">
 							<div class="w90 cf">
@@ -44,8 +44,8 @@
 							
 								<?php get_template_part('module_card'); ?>
 
-							<?php endwhile; ?>	
-							</div>
+							<?php endwhile; ?>
+							</div>	
 							</div>
 					
 					</section>

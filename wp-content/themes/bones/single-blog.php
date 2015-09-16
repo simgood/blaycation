@@ -12,7 +12,7 @@
 					<?php get_template_part('module_page_content') ?>
 
 					<section>
-						<h2 class="h2">TRAVEL ARCHIVE</h2>
+						<h3 class="h3">TRAVEL ARCHIVE</h3>
 							<hr/>										
 
 						<?php endif; wp_reset_postdata();?>
