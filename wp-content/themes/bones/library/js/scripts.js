@@ -35,16 +35,21 @@ jQuery(document).ready(function($) {
 		$(".nav").toggleClass("mobile-nav_open");
 	});
 
-	// Modal Windows
-	$(".modal-window-toggle").click(function(){
-		$(".modal-window").toggleClass("modal-window_active");
+	// Modal Windows -- Request a Callback
+	$(".modal-window-toggle.callback").click(function(){
+		$(".modal-window.callback").toggleClass("modal-window_active");
+	});
+
+	// Modal Windows -- Mailchimp Signup
+	$(".modal-window-toggle.signup").click(function(){
+		$(".modal-window.signup").toggleClass("modal-window_active");
 	});
 
 	// Unslider
 	$(function() {
     	$('.slider').unslider({
     		speed:800,
-    		delay:10000,
+    		delay:8000,
     		dots:true,
     	});
 	});

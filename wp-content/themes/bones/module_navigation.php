@@ -79,8 +79,22 @@
 			<div class="nav-item d-b fl-l p-h">
 				<a class="d-b" href="<?php echo home_url(); ?>/inspirations">INSPIRATIONS</a>
 			</div>
-			<div class="nav-item d-b fl-l p-h">
-				<a class="d-b" href="<?php echo home_url(); ?>/blaycation-insider">BLOG</a>
+			<div class="nav-item d-b fl-l p-h dd">
+				<a class="d-b" href="<?php echo home_url(); ?>/blaycation-insider">
+					BLOG<div class="fl-r icon icon-angle-down state-flip"></div>
+				</a>
+				<div class="dd-menu">
+					<a href="<?php echo home_url(); ?>/blaycation-insider">
+						<div class="dd-menu_item">
+							Blaycation Insider
+						</div>
+					</a>
+					<a class="modal-window-toggle signup">
+						<div class="dd-menu_item">
+							Newsletter Signup
+						</div>
+					</a>
+				</div>
 			</div>
 			<div class="nav-item d-b fl-l p-h dd">
 				<a class="d-b" href="<?php echo home_url(); ?>/about-us">ABOUT US
@@ -110,7 +124,7 @@
 				</a>
 				<div class="dd-menu">
 					<a>
-						<div class="dd-menu_item modal-window-toggle">
+						<div class="dd-menu_item modal-window-toggle callback">
 							Request a Callback
 						</div>
 					</a>
@@ -124,12 +138,12 @@
 							Call 1-902-441-5664
 						</div>
 					</a>
-					<a href="<?php echo home_url(); ?>/https://www.facebook.com/blaycation">
+					<a href="https://www.facebook.com/blaycation">
 						<div class="dd-menu_item">
 							<span class="icon icon-facebook"></span>&nbsp;Facebook
 						</div>
 					</a>
-					<a href="<?php echo home_url(); ?>/https://twitter.com/blaycation">
+					<a href="https://twitter.com/blaycation">
 						<div class="dd-menu_item">
 							<span class="icon icon-twitter"></span>&nbsp;Twitter
 						</div>

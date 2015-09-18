@@ -12,7 +12,6 @@
 		text-align: center;
 	}
 
-
 	// Labels
 	label {
 		font-family: $font-heading-light;
@@ -59,6 +58,8 @@
 
 	input[type='radio'] {
 
+		opacity:0;
+
 		+ label {
 			padding-left:10px;
 			color:$dark;
@@ -99,7 +100,7 @@
 	.ginput_container input[type='text'],
 	.ginput_container textarea {
 		width:100%;
-		padding:$space / 1.5;
+		padding:$space / 2;
 		@include margin-h(auto);
 	}
 

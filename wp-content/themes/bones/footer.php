@@ -23,6 +23,7 @@
 			</footer>
 
 			<?php get_template_part('module_callback_request_modal') ?>
+			<?php get_template_part('module_newsletter_signup_modal') ?>
 
 		</div>
 

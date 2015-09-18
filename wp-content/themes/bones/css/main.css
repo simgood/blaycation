@@ -502,30 +502,32 @@ a {
       transition: 0.3s; }
       .gform_wrapper .gform_footer input[type='submit']:hover {
         background: #3ebfed; }
-  .gform_wrapper input[type='radio'] + label {
-    padding-left: 10px;
-    color: #444;
-    text-transform: initial;
-    font-size: 1em;
-    position: relative;
-    cursor: pointer; }
-    .gform_wrapper input[type='radio'] + label::before {
-      content: " ";
-      position: absolute;
-      top: -2px;
-      left: -16px;
-      height: 16px;
-      width: 16px;
-      border-radius: 50%;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      background: #fff;
-      border: 1px solid #3ebfed; }
-  .gform_wrapper input[type='radio']:checked + label::before {
-    background: #3ebfed;
-    border: 3px solid #fff;
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5); }
+  .gform_wrapper input[type='radio'] {
+    opacity: 0; }
+    .gform_wrapper input[type='radio'] + label {
+      padding-left: 10px;
+      color: #444;
+      text-transform: initial;
+      font-size: 1em;
+      position: relative;
+      cursor: pointer; }
+      .gform_wrapper input[type='radio'] + label::before {
+        content: " ";
+        position: absolute;
+        top: -2px;
+        left: -16px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        background: #fff;
+        border: 1px solid #3ebfed; }
+    .gform_wrapper input[type='radio']:checked + label::before {
+      background: #3ebfed;
+      border: 3px solid #fff;
+      box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5); }
   .gform_wrapper .validation_error,
   .gform_wrapper .validation_message {
     color: red;
@@ -535,7 +537,7 @@ a {
   .gform_wrapper .ginput_container input[type='text'],
   .gform_wrapper .ginput_container textarea {
     width: 100%;
-    padding: 10.66667px;
+    padding: 8px;
     margin-left: auto;
     margin-right: auto; }
 
@@ -1214,9 +1216,6 @@ section, .section {
     margin-top: 4px;
     margin-bottom: 4px; }
 
-  .p-t-md {
-    padding-top: 50px; }
-
   .gform_wrapper .gfield,
   .gform_wrapper .gform_footer {
     width: 100%; } }
@@ -1628,9 +1627,6 @@ section, .section {
   .m-v-sm {
     margin-top: 4px;
     margin-bottom: 4px; }
-
-  .p-t-md {
-    padding-top: 50px; }
 
   .gform_wrapper .gfield,
   .gform_wrapper .gform_footer {

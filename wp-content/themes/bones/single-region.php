@@ -36,15 +36,15 @@
 							?>
 
 							
-							<div class="row center m-b-lg">
+						<div class="row center m-b-lg">
 							<div class="w90 cf">
-							<?php if ($query->have_posts()) : $query->the_post(); ?>	
-							<h3 class="h3">RELATED PROPERTIES</h3>
-							<hr/>
-								<?php get_template_part('module_card'); ?>
-							<?php endif; ?>
+								<?php if ($query->have_posts()) : $query->the_post(); ?>	
+								<h3 class="h3">RELATED PROPERTIES</h3>
+								<hr/>
+									<?php get_template_part('module_card'); ?>
+								<?php endif; ?>
 							</div>	
-							</div>
+						</div>
 					
 					</section>
 
