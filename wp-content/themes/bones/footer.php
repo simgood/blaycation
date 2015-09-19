@@ -12,6 +12,10 @@
 				<div class="fl-l text-purple em">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> Ltd</div>
 				<div class="fl-r text-purple heading">
 					<div class="fl-l">
+					<a class="modal-window-toggle callback">Request a Callback</a>
+					&nbsp;|&nbsp;
+					<a class="modal-window-toggle signup">Become a Blaycation Insider</a>
+					&nbsp;|&nbsp;
 					<a href="<?php echo home_url(); ?>/poker">Blaycation Poker</a>
 					&nbsp;|&nbsp;
 					<a href="<?php echo home_url(); ?>/blaycation-corporate-getaways">Corporate Getaways</a>
@@ -31,5 +35,6 @@
 		<?php wp_footer(); ?>
 
 	</body>
+
 
 </html>

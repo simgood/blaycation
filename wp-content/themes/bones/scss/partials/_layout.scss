@@ -41,7 +41,7 @@
 .center {text-align: center;}
 .left {text-align: left;}
 .right {text-align: right;}
-.middle {margin:0 auto;}
+.middle {margin-left: auto;margin-right:auto;}
 
 // General Padding
 .p-xs		{padding:$space / 2;}

@@ -59,8 +59,6 @@
 						
 						<h2 class="h2">WHY BLAYCATION</h2>
 						
-						<form>
-							
 							<div class="tabset relative cf panel-300 w80">
 								
 								<div class="tab w25 center">
@@ -105,8 +103,6 @@
 								</div>
 
 							</div>
-
-						</form>
 
 					</section>
 

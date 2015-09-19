@@ -1,4 +1,28 @@
-.gform_wrapper {
+
+	// Labels
+	label {
+		font-family: $font-heading-light;
+		font-size:0.8em;
+		text-transform: uppercase;
+
+		color:#666;
+		display:block;
+	}
+
+	// Normal Text Fields
+	input[type='text'], input[type='email'], textarea {
+		border:1px solid $blue;
+		@include transition(box-shadow 0.2s);
+		display:block;
+		padding:$space / 2;
+
+		&:focus, &:active {
+			outline:3px solid $blue;
+			@include shadow;
+		}
+	}
+
+.gform_wrapper, form {
 	@include shadow;
 	border:1px solid #ccc;
 	overflow:auto;
@@ -10,26 +34,6 @@
 
 	.gform_title {
 		text-align: center;
-	}
-
-	// Labels
-	label {
-		font-family: $font-heading-light;
-		font-size:0.8em;
-		text-transform: uppercase;
-
-		color:#999;
-	}
-
-	// Normal Text Fields
-	input[type='text'], textarea {
-		border:1px solid $blue;
-		@include transition(box-shadow 0.2s);
-
-		&:focus, &:active {
-			outline:3px solid $blue;
-			@include shadow;
-		}
 	}
 
 	// the send button section
@@ -71,7 +75,7 @@
 			&::before {
 				content:" ";
 				position: absolute;
-	        	top: -2px;
+	        	top: 4px;
 	        	left: -16px;
 	        	@include square(16px);
 	        	border-radius: 50%;

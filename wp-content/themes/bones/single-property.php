@@ -10,6 +10,8 @@
 					<?php get_template_part('module_banner_header'); ?>	
 
 					<?php get_template_part('module_page_content') ?>
+
+					<?php get_template_part('module_cta_button') ?>
 				
 					<section>
 						<h3 class="h3 center">RELATED PROPERTIES</h3>

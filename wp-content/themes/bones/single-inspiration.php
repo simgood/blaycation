@@ -11,6 +11,8 @@
 
 					<?php get_template_part('module_page_content') ?>
 
+					<?php get_template_part('module_cta_button') ?>
+
 					<section>
 						<h3 class="h3">MORE INSPIRATION</h3>
 							<hr/>										
@@ -22,7 +24,7 @@
 
 							$args = array(
 								'post_type' => 'inspiration',
-								'posts_per_page' => '-1',
+								'posts_per_page' => '6',
 								'orderby'=> 'rand',
 								'order' => 'ASC',
 							);

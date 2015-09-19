@@ -13,18 +13,4 @@
 			</h4>
 		</a>
 	</div>
-	<div class="card-text p-h p-t-sm d-tab">
-		<div class="text relative">
-			<div class="text_sm">
-				<?php the_content(); ?>
-			</div>
-			<div class="fade-out"></div>
-		</div>
-		
-		<div class="center p-v">
-			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'the_title' ) ) ); ?>" class="btn-purple">
-				Read more...
-			</a>
-		</div>	
-	</div>
 </div>
